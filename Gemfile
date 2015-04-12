@@ -8,7 +8,13 @@ gem "middleman", "~>3.3.10"
 gem "middleman-livereload", "~> 3.1.0"
 
 # For faster file watcher updates on Windows:
-gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
+gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 
 # Windows does not come with time zone data
 gem "tzinfo-data", platforms: [:mswin, :mingw]
+
+
+# Bootstrap Dependencies
+gem "middleman-bootstrap-navbar", :require => false
+gem "bootstrap-sass", :require => false
+gem "jquery-middleman", :require => false
