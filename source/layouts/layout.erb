@@ -2,18 +2,32 @@
 <html>
   <head>
     <meta charset="utf-8">
-    
+
     <!-- Always force latest IE rendering engine or request Chrome Frame -->
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-    
+
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "The Middleman" %></title>
-    
-    <%= stylesheet_link_tag "normalize", "all" %>
+    <title><%= current_page.data.title || "Canary Print + Design" %></title>
+
+    <!-- Add Stylesheets and JS -->
+    <%= stylesheet_link_tag "main" %>
     <%= javascript_include_tag  "all" %>
+
   </head>
-  
+
+  <!-- Add Navigation Bar -->
+  <%= partial "partials/nav" %>
+
+  <!-- Add Page-specific styles?? -->
   <body class="<%= page_classes %>">
-    <%= yield %>
+
+  <!-- The dynamic page content -->
+  <%= yield %>
+
+
+  <!-- Add Footer -->
+  <%= partial "partials/footer" %>
+
+
   </body>
 </html>
