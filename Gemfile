@@ -18,3 +18,4 @@ gem "tzinfo-data", platforms: [:mswin, :mingw]
 gem "middleman-bootstrap-navbar", :require => false
 gem "bootstrap-sass", :require => false
 gem "jquery-middleman", :require => false
+gem 'font-awesome-middleman'

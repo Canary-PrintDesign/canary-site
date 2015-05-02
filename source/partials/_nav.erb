@@ -1,41 +1,49 @@
-<div class="container">
-<!-- Static navbar -->
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+<nav class="header-fixed">
+  <div class="header-v6 header-dark-scroll header-dark-dropdown header-sticky header-border-bottom">
+    <div class="navbar mega-menu" role="navigation">
+      <div class="container">
+        <div class="menu-container">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">
-            <img src="/images/nav-logo-black.png" style="height:60px;">
+          <a class="navbar-brand" href="/">
+            <%= image_tag 'nav_logo_yellow.png', :class => 'default-logo', :style => 'height:60px;' %>
+            <%= image_tag 'nav_logo_black.png', :class => 'shrink-logo', :style => 'height:60px;' %>
           </a>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Print</a></li>
-            <li><a href="#">Design</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+        <div id="navbar" class="collapse navbar-collapse navbar-responsive-collapse">
+          <div class="menu-container">
+            <ul class="nav navbar-nav navbar-left">
+              <li><%= link_to 'Home', '/' %></li>
+              <li class="dropdown">
+                <a href="/print">Print<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li class="dropdown-header">Resources</li>
+                  <li><a href="/resources/guides">Artwork Guidelines</a></li>
+                  <li><a href="/resources/templates">File Templates</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="/design">Design</a>
+              </li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
           <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Resources <span class="caret"></span></a>
+              <a style="cursor:default" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Resources <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="#">File Specifications</a></li>
-                <li><a href="#">Print Templates</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Other things?</li>
-                <li><a href="#">More stuff</a></li>
-                <li><a href="#">Last of the stuff</a></li>
+                <li><a href="/resources/guides">Artwork Guidelines</a></li>
+                <li><a href="/resources/templates">Print Templates</a></li>
+                <li><a href="/resources/faq">FAQ</a></li>
               </ul>
             </li>
           </ul>
-        </div><!--/.nav-collapse -->
+        </div>
       </div><!--/.container-fluid -->
-    </nav>
+    </div>
   </div>
-</div>
+</nav>

@@ -1,0 +1,64 @@
+/*Dark Transparent*/
+.cube-portfolio .cbp-caption-activeWrap.aslan-hover {
+  background: rgba(219, 216, 198, 0.6) !important;
+}
+
+.jumbollax {
+  z-index: 1;
+  height: auto;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  background-position: center center;
+}
+
+.jumbollax1 { background: url(../images/bg1.jpg) 100% 0 fixed no-repeat; background-size: cover; }
+.jumbollax2 { background: url(../images/bg2.jpg) 100% 0 fixed no-repeat; background-size: cover; }
+.jumbollax3 { background: url(../images/bg3.jpg) 100% 0 fixed no-repeat; background-size: cover; }
+.jumbollax4 { background: url(../images/bg4.jpg) 100% 0 fixed no-repeat; background-size: cover; }
+.jumbollax5 { background: url(../images/bg5.jpg) 100% 0 fixed no-repeat; background-size: cover; }
+.jumbollax6 { background: url(../images/bg6.jpg) 100% 0 fixed no-repeat; background-size: cover; }
+
+
+.voffset    { margin-top: 2px; }
+.voffset1   { margin-top: 5px; }
+.voffset2   { margin-top: 10px; }
+.voffset3   { margin-top: 15px; }
+.voffset4   { margin-top: 30px; }
+.voffset5   { margin-top: 40px; }
+.voffset6   { margin-top: 60px; }
+.voffset7   { margin-top: 80px; }
+.voffset8   { margin-top: 100px; }
+.voffset9   { margin-top: 150px; }
+.voffset10  { margin-top: 200px; }
+.voffset11  { margin-top: 250px; }
+
+
+hr {
+  border-top: 1px solid #838383;
+}
+
+.btn-u-xlg,
+a.btn-u-xlg {
+  font-size: 25px;
+  padding: 15px 30px;
+}
+
+.spec-icon {
+  color: $spec-icon;
+  font-size: 23px !important;
+}
+
+.spec-heading {
+  font-weight: 800;
+}
+
+.spec-button {
+  color: $spec-icon;
+  background-color: #5E22D7;
+}
+
+.spec-button:hover {
+  color: black;
+  background-color: #461D98;
+  }
