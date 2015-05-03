@@ -194,7 +194,7 @@
 ------------------------------------*/
 .header-v6 .header-inner-right {
   float: right;
-  z-index: 999;
+  z-index: 900;
   margin-left: -20px;
   position: relative;
 }
@@ -918,7 +918,7 @@
     left: 0;
     width: 100%;
     height: auto;
-    z-index: 9999;
+    z-index: 990;
     position: fixed;
   }
 
