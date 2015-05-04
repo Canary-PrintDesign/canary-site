@@ -50,9 +50,18 @@ a.btn-u-xlg {
 
 .spec-icon {
   color: #809BBF;
-  font-size: 23px !important;
+  font-size: 45px !important;
+  vertical-align: top;
 }
 
 .spec-heading {
   font-weight: 800;
+  vertical-align: top;
+}
+
+.spec-heading, .spec-desc {
+}
+
+.spec-col {
+  padding-left: 0px !important;
 }
