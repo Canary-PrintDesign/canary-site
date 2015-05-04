@@ -4,9 +4,6 @@
 //= require mixitup
 //= require wow.min
 //= require portfolio
-//= require owl.carousel
 //= require app
-//= require owl-recent-works
-
-//=require cube-portfolio-3
+//= require cube-portfolio-3
 

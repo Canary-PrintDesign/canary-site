@@ -87,37 +87,18 @@ title: "Canary - Postcards / Rack Cards"
     </div>
   <!-- End Carousel -->
   </div><!--/row-->
-
-<!--
-    <div class="tag-box tag-box-v2">
-        <p>Customer Testimonials?  Sure.  Maybe dynamically, someday.</p>
+  <!--=== Content Part ===-->
+  <div class="container content">
+    <!-- Portfolio Sorting Blocks -->
+    <div class="sorting-block">
+      <ul class="row sorting-grid">
+        <%= partial "partials/print_port_items/brochures" %>
+        <%= partial "partials/print_port_items/silk_cards" %>
+        <%= partial "partials/print_port_items/foil_cards" %>
+        <%= partial "partials/print_port_items/thick_cards" %>
+      </ul>
+      <div class="clearfix"></div>
     </div>
-
-    <div class="margin-bottom-20 clearfix"></div>
--->
-
-  <!-- Recent Works -->
-  <div class="owl-carousel-v1 owl-work-v1 margin-bottom-20">
-    <div class="headline"><h2 class="pull-left">Related Products</h2>
-      <div class="owl-navigation">
-        <div class="customNavigation">
-          <a class="owl-btn prev-v2"><i class="fa fa-angle-left"></i></a>
-          <a class="owl-btn next-v2"><i class="fa fa-angle-right"></i></a>
-        </div>
-      </div><!--/navigation-->
-    </div>
-
-    <div class="owl-recent-works-v1">
-      <%= partial "partials/product_slider/brochures" %>
-      <%= partial "partials/product_slider/silk_cards" %>
-      <%= partial "partials/product_slider/foil_cards" %>
-      <%= partial "partials/product_slider/thick_cards" %>
-      <%= partial "partials/product_slider/banners" %>
-      <%= partial "partials/product_slider/canvas" %>
-      <%= partial "partials/product_slider/flags" %>
-      <%= partial "partials/product_slider/posters" %>
-    </div>
-  <!-- End Recent Works -->
   </div>
 </div>
 <!--/container-->
