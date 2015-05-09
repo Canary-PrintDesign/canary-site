@@ -1,32 +1,20 @@
-@import "custom_bootstrap";
-
-
-@import "app";
-@import "unify";
-
-
-
-@import "footer";
-@import "header";
-@import "portfolio-v2";
-
-
-
-@import "font-awesome";
-@import "animate";
-
-
-
 @import "variables";
 
+@import "custom_bootstrap";
+@import "font-awesome";
 
+// Unify
+// TODO: assimilate this stuff into manageable files
+@import "unify/app";
+@import "unify/unify";
+@import "unify/animate";
+@import "unify/cubeportfolio";
+@import "unify/header";
+@import "unify/portfolio-v2";
+@import "unify/custom_cubeportfolio";
+@import "unify/custom";
 
+@import "modules/footer";
 
-
-@import "cubeportfolio";
-@import "custom-cubeportfolio";
-@import "page_faq1";
-
-
-
-@import "custom";
+@import "pages/contact";
+@import "pages/faq";
