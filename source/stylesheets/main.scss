@@ -1,4 +1,5 @@
 @import "variables";
+@import "mixins";
 
 @import "custom_bootstrap";
 @import "font-awesome";
@@ -13,6 +14,8 @@
 @import "unify/portfolio-v2";
 @import "unify/custom_cubeportfolio";
 @import "unify/custom";
+
+@import "components/portfolio";
 
 @import "modules/footer";
 

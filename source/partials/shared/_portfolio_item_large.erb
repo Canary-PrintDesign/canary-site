@@ -1,0 +1,13 @@
+<% link_to(href, class: "portfolio-item") do %>
+  <%= image_tag image %>
+  <div class="portfolio-mask">
+    <div class="portfolio-caption">
+      <h2><%= name %></h2>
+      <ul class="list-unstyled">
+        <% tags.each do |tag| %>
+          <li><%= tag.to_s.titleize %></li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+<% end %>
