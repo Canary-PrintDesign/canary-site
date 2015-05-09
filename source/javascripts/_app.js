@@ -27,7 +27,7 @@ var App = function () {
     }
 
     //Search Box (Header)
-    function handleSearch() {    
+    function handleSearch() {
         jQuery('.search').click(function () {
             if(jQuery('.search-btn').hasClass('fa-search')){
                 jQuery('.search-open').fadeIn(500);
@@ -37,8 +37,8 @@ var App = function () {
                 jQuery('.search-open').fadeOut(500);
                 jQuery('.search-btn').addClass('fa-search');
                 jQuery('.search-btn').removeClass('fa-times');
-            }   
-        }); 
+            }
+        });
     }
 
     //Search Box v1 (Header v5)
@@ -73,11 +73,11 @@ var App = function () {
         */
     }
 
-    //Equal Height Columns    
+    //Equal Height Columns
     function handleEqualHeightColumns() {
-        var EqualHeightColumns = function () {            
+        var EqualHeightColumns = function () {
             $(".equal-height-columns").each(function() {
-                heights = [];              
+                heights = [];
                 $(".equal-height-column", this).each(function() {
                     $(this).removeAttr("style");
                     heights.push($(this).height()); // write column's heights to the array
@@ -86,22 +86,22 @@ var App = function () {
             });
         }
 
-        EqualHeightColumns();        
-        $(window).resize(function() {            
+        EqualHeightColumns();
+        $(window).resize(function() {
             EqualHeightColumns();
         });
         $(window).load(function() {
             EqualHeightColumns("img.equal-height-column");
         });
-    }    
+    }
 
     //Hover Selector
     function handleHoverSelector() {
-        $('.hoverSelector').on('hover', function(e) {        
+        $('.hoverSelector').on('hover', function(e) {
             $('.hoverSelectorBlock', this).toggleClass('show');
-            e.stopPropagation();            
+            e.stopPropagation();
         });
-    }    
+    }
 
     //Bootstrap Tooltips and Popovers
     function handleBootstrap() {
@@ -113,10 +113,10 @@ var App = function () {
 
         /*Tooltips*/
         jQuery('.tooltips').tooltip();
-        jQuery('.tooltips-show').tooltip('show');      
-        jQuery('.tooltips-hide').tooltip('hide');       
-        jQuery('.tooltips-toggle').tooltip('toggle');       
-        jQuery('.tooltips-destroy').tooltip('destroy');       
+        jQuery('.tooltips-show').tooltip('show');
+        jQuery('.tooltips-hide').tooltip('hide');
+        jQuery('.tooltips-toggle').tooltip('toggle');
+        jQuery('.tooltips-destroy').tooltip('destroy');
 
         /*Popovers*/
         jQuery('.popovers').popover();
@@ -138,7 +138,7 @@ var App = function () {
             handleEqualHeightColumns();
         },
 
-        //Scroll Bar 
+        //Scroll Bar
         initScrollBar: function () {
             jQuery('.mCustomScrollbar').mCustomScrollbar({
                 theme:"minimal",
@@ -147,7 +147,7 @@ var App = function () {
             });
         },
 
-        //Counters 
+        //Counters
         initCounter: function () {
             jQuery('.counter').counterUp({
                 delay: 10,
@@ -173,7 +173,7 @@ var App = function () {
                     jQuery(this).find('.dropdown-menu').first().stop(true, true).slideUp();
                 });
             }
-         
+
             jQuery(window).resize(function(){
                 if (jQuery(window).width() > 768) {
                     MenuMode();

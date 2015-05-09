@@ -31,15 +31,13 @@
 
 
   <!-- Add JS -->
-  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
   <%= javascript_include_tag  "main" %>
 
   <script type="text/javascript">
     jQuery(document).ready(function() {
         App.init();
         PortfolioPage.init();
-        App.initParallaxBg();
+        new WOW().init();
     });
   </script>
 

@@ -46,18 +46,18 @@
 	text-decoration: none;
 }
 
-.sorting-block .sorting-grid li .sorting-cover {	
+.sorting-block .sorting-grid li .sorting-cover {
 	padding: 8px;
 	display: block;
 	margin-top: 1px;
 	background: #fcfcfc;
 }
 
-.sorting-block .sorting-grid li .sorting-cover p {	
+.sorting-block .sorting-grid li .sorting-cover p {
 	margin-bottom: 0;
 }
 
-.sorting-block .sorting-grid li .sorting-cover span {	
+.sorting-block .sorting-grid li .sorting-cover span {
 	font-size: 16px;
 }
 
@@ -66,7 +66,7 @@
     -webkit-transition: all 0.4s ease;
     -moz-transition: all 0.4s ease;
     -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;	
+    transition: all 0.4s ease;
 }
 
 .sorting-block .sorting-grid li a:hover .sorting-cover p,
