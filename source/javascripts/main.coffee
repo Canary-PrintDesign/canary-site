@@ -6,6 +6,7 @@
 #= require lodash/lodash
 #= require wow.js/src/wow
 
+#= require forms/_init
 #= require _header_shrink
 #= require _product_tiles
 
