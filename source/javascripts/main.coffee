@@ -1,6 +1,7 @@
 #= require jquery/dist/jquery
-#= require bootstrap/js/carousel
-#= require bootstrap/js/collapse
+#= require bootstrap-sprockets
+#= require bootstrap/carousel
+#= require bootstrap/collapse
 #= require isotope/dist/isotope.pkgd
 #= require lodash/lodash
 #= require wow.js/src/wow
