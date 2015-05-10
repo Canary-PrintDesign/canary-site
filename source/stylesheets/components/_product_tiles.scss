@@ -45,6 +45,7 @@ $aspect-ratio-image: 208/260;
   h3 {
     margin: 0;
     padding: 0.5em;
+    margin-top: 2px;
 
     background: $gray-lighter;
   }
@@ -54,7 +55,7 @@ $aspect-ratio-image: 208/260;
 
     h3 {
       color: white;
-      background: transparentize($brand-primary, 0.4);
+      background: $brand-primary;
     }
   }
 }
