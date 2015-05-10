@@ -19,7 +19,7 @@ $nile-blue:             hsl(211, 33%, 23%);
 $savings-green:         hsl(92, 63%, 46%);
 
 $brand-primary:         $savings-green;
-// $brand-success:         #5cb85c !default;
+$brand-success:         $brand-primary;
 // $brand-info:            #5bc0de !default;
 // $brand-warning:         #f0ad4e !default;
 // $brand-danger:          #d9534f !default;
