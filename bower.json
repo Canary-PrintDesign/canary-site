@@ -1,0 +1,7 @@
+{
+  "name": "canary-site",
+  "private": true,
+  "dependencies": {
+    "isotope": "~2.2.0"
+  }
+}

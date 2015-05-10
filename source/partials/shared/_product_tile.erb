@@ -1,0 +1,6 @@
+<% content_tag(:div, class: (["product-tile-container", "col-md-3"] << tags).join(' ')) do %>
+  <% link_to(href, class: "product-tile") do %>
+    <%= image_tag image %>
+    <h3 class="text-center"><%= name %></h3>
+  <% end %>
+<% end %>

@@ -22,38 +22,40 @@ title: "Canary Print + Design"
   </p>
 </div>
 
+<div class="container">
+  <ul class="product-tile-filters text-center list-inline">
+    <li>
+      <%= input_tag :radio, name: :filter, value: "*", id: "filter-all", checked: true %>
+      <%= label_tag "filter-all", caption: "All" %>
+    </li>
+    <li>
+      <%= input_tag :radio, name: :filter, value: ".top", id: "filter-top" %>
+      <%= label_tag "filter-top", caption: "Top Sellers" %>
+    </li>
+    <li>
+      <%= input_tag :radio, name: :filter, value: ".marketing", id: "filter-marketing" %>
+      <%= label_tag "filter-marketing", caption: "Marketing" %>
+    </li>
+    <li>
+      <%= input_tag :radio, name: :filter, value: ".large", id: "filter-large" %>
+      <%= label_tag "filter-large", caption: "Large Format" %>
+    </li>
+    <li>
+      <%= input_tag :radio, name: :filter, value: ".outdoor", id: "filter-outdoor" %>
+      <%= label_tag "filter-outdoor", caption: "Outdoor" %>
+    </li>
+  </ul>
 
-<!--=== Content Part ===-->
-<div class="container content">
-  <!-- Portfolio Sorting Blocks -->
-  <div class="sorting-block">
-    <div class="content-xs">
-      <ul class="sorting-nav sorting-nav-v1 text-center">
-        <li class="filter" data-filter="all">All</li>
-        <li class="filter" data-filter="cat_top">Top Sellers</li>
-        <li class="filter" data-filter="cat_marketing">Marketing</li>
-        <li class="filter" data-filter="cat_large">Large Format</li>
-        <li class="filter" data-filter="cat_outdoor">Outdoor</li>
-      </ul>
-    </div>
-    <ul class="row sorting-grid">
-      <%= partial "partials/print_port_items/silk_cards" %>
-      <%= partial "partials/print_port_items/canvas" %>
-      <%= partial "partials/print_port_items/foil_cards" %>
-      <%= partial "partials/print_port_items/flags" %>
-      <%= partial "partials/print_port_items/thick_cards" %>
-      <%= partial "partials/print_port_items/banners" %>
-      <%= partial "partials/print_port_items/standard_cards" %>
-      <%= partial "partials/print_port_items/brochures" %>
-      <%= partial "partials/print_port_items/postcards" %>
-      <%= partial "partials/print_port_items/posters" %>
-    </ul>
-    <div class="clearfix"></div>
+  <div class="product-tiles">
+    <%= partial "partials/print_port_items/banners" %>
+    <%= partial "partials/print_port_items/brochures" %>
+    <%= partial "partials/print_port_items/canvas" %>
+    <%= partial "partials/print_port_items/flags" %>
+    <%= partial "partials/print_port_items/foil_cards" %>
+    <%= partial "partials/print_port_items/postcards" %>
+    <%= partial "partials/print_port_items/posters" %>
+    <%= partial "partials/print_port_items/silk_cards" %>
+    <%= partial "partials/print_port_items/standard_cards" %>
+    <%= partial "partials/print_port_items/thick_cards" %>
   </div>
-<!-- End Portfolio Sorting Blocks -->
-</div><!--/container-->
-<!--=== End Content Part ===-->
-
-
-
-
+</div>

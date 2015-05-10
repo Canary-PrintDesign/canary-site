@@ -1,0 +1,60 @@
+$aspect-ratio-image: 208/260;
+
+.product-tiles {
+  margin: $grid-gutter-width 0;
+}
+
+.product-tile-filters {
+  margin: 1em 0;
+
+  input {
+    display: none;
+  }
+
+  label {
+    cursor: pointer;
+
+    color: $headings-color;
+
+    font-size: 1.25em;
+    font-weight: normal;
+    font-style: italic;
+  }
+  :checked + label {
+    text-decoration: underline;
+
+    color: $brand-primary;
+  }
+}
+
+.product-tile {
+  position: relative;
+
+  display: block;
+
+  margin-bottom: $grid-gutter-width;
+  padding-top: $aspect-ratio-image * 100%; // Height before image load
+
+  img {
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+  }
+
+  h3 {
+    margin: 0;
+    padding: 0.5em;
+
+    background: $gray-lighter;
+  }
+
+  &:hover {
+    text-decoration: none;
+
+    h3 {
+      color: white;
+      background: transparentize($brand-primary, 0.4);
+    }
+  }
+}
