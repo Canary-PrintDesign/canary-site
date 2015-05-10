@@ -8,3 +8,4 @@ resizeHeader = _.throttle ->
 , 100
 
 $(window).scroll(resizeHeader)
+resizeHeader()
