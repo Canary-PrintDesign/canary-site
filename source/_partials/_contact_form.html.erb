@@ -1,4 +1,9 @@
-<form name="contact-form" method="post" action="contact_form.php">
+<form name="contact-form"
+      action="contact_form.php"
+      data-ajax-form
+      data-ajax-sucess="#contact-success"
+      data-ajax-error="#contact-error">
+
   <label for="name-input">Name</label>
   <div class="input-group">
     <input type="text" class="form-control" id="name-input" required>
@@ -25,3 +30,7 @@
 
   <button type="submit" class="btn btn-primary btn-lg">Send message</button>
 </form>
+
+<p id="contact-success" class="hidden">Success!</p>
+
+<p id="contact-error" class="hidden">Error :(</p>
