@@ -1,14 +1,31 @@
+.contacts {
+  font-size: 13px;
+}
+
+.nav-logo {
+  height: 60px;
+}
+
+.main-logo {
+  height: 300px;
+  margin: 0 auto;
+}
+
+.filetype-icon {
+  height: 50px;
+  margin: 0 auto;
+}
+
+.client-link {
+  font-size: 25px;
+}
+
 .list-unstyled strong {
   font-size: 15px;
 }
 
 .promo-box a.promo-icons:hover {
   text-decoration: none;
-}
-
-/*Dark Transparent*/
-.cube-portfolio .cbp-caption-activeWrap.aslan-hover {
-  background: rgba(219, 216, 198, 0.6) !important;
 }
 
 .jumbollax {
@@ -20,12 +37,12 @@
   background-position: center center;
 }
 
-.jumbollax1 { background: url(../images/bg1.jpg) 100% 0 fixed no-repeat; background-size: cover; }
-.jumbollax2 { background: url(../images/bg2.jpg) 100% 0 fixed no-repeat; background-size: cover; }
-.jumbollax3 { background: url(../images/bg3.jpg) 100% 0 fixed no-repeat; background-size: cover; }
-.jumbollax4 { background: url(../images/bg4.jpg) 100% 0 fixed no-repeat; background-size: cover; }
-.jumbollax5 { background: url(../images/bg5.jpg) 100% 0 fixed no-repeat; background-size: cover; }
-.jumbollax6 { background: url(../images/bg6.jpg) 100% 0 fixed no-repeat; background-size: cover; }
+.jumbollax1 { background: url(/images/bg1.jpg) 100% 0 fixed no-repeat; background-size: cover; }
+.jumbollax2 { background: url(/images/bg2.jpg) 100% 0 fixed no-repeat; background-size: cover; }
+.jumbollax3 { background: url(/images/bg3.jpg) 100% 0 fixed no-repeat; background-size: cover; }
+.jumbollax4 { background: url(/images/bg4.jpg) 100% 0 fixed no-repeat; background-size: cover; }
+.jumbollax5 { background: url(/images/bg5.jpg) 100% 0 fixed no-repeat; background-size: cover; }
+.jumbollax6 { background: url(/images/bg6.jpg) 100% 0 fixed no-repeat; background-size: cover; }
 
 
 .voffset    { margin-top: 2px; }

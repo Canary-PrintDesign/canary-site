@@ -58,7 +58,7 @@ set :js_dir, 'javascripts'
 set :images_dir, 'images'
 images_dir = "images"
 
-set :partials_dir, 'partials'
+set :partials_dir, '_partials'
 
 sprockets.append_path File.join root, 'vendor/assets/bower_components'
 
@@ -80,5 +80,4 @@ configure :build do
   # set :http_prefix, "/Content/images/"
 end
 
-activate :relative_assets
 activate :directory_indexes

@@ -2,7 +2,6 @@
 title: "Canary - Silk Cards"
 ---
 
-
 <div class="jumbotron jumbollax jumbollax5">
   <div class="container">
     <div class="voffset10"></div>
@@ -11,10 +10,8 @@ title: "Canary - Silk Cards"
   </div>
 </div>
 
-<!--=== Content Part ===-->
 <div class="container content">
   <div class="row portfolio-item margin-bottom-50">
-    <!-- Content Info -->
     <div class="col-md-6 md-margin-bottom-40">
       <h2>Silky smooth and soft cards?  Yes please!</h2>
       <p>A client favorite, these cards get an immediate reaction when handing them to prospective clients and investors.  The silk-laminate finish also helps protect against the elements</p>
@@ -49,9 +46,7 @@ title: "Canary - Silk Cards"
       </div>
       <a href="/contact" class="btn btn-primary btn-lg rounded spec-button">FREE PRICE QUOTE</a>
     </div>
-    <!-- End Content Info -->
 
-    <!-- Carousel -->
     <div class="col-md-6">
       <div class="carousel slide carousel-v1" id="myCarousel">
         <div class="carousel-inner">
@@ -70,11 +65,10 @@ title: "Canary - Silk Cards"
           <div class="item">
             <%= image_tag 'products/silk3.jpg' %>
             <div class="carousel-caption">
-              <p>Silk card with a Spot UV bridge for an engineering company</p>
+              <p>Silk card with a custom Spot UV bridge for an engineering company</p>
             </div>
           </div>
         </div>
-
         <div class="carousel-arrow">
           <a data-slide="prev" href="#myCarousel" class="left carousel-control">
             <i class="fa fa-angle-left"></i>
@@ -85,21 +79,21 @@ title: "Canary - Silk Cards"
         </div>
       </div>
     </div>
-  <!-- End Carousel -->
-  </div><!--/row-->
-  <!--=== Content Part ===-->
+  </div>
+
   <div class="container content">
-    <!-- Portfolio Sorting Blocks -->
-    <div class="sorting-block">
-      <ul class="row sorting-grid">
-        <%= partial "partials/print_port_items/foil_cards" %>
-        <%= partial "partials/print_port_items/postcards" %>
-        <%= partial "partials/print_port_items/canvas" %>
-        <%= partial "partials/print_port_items/flags" %>
-      </ul>
-      <div class="clearfix"></div>
+    <div class="headline">
+      <h2 class="pull-left">Related Products</h2>
     </div>
   </div>
+  <div class="sorting-block">
+    <ul class="row sorting-grid">
+      <%= partial "print_port_items/foil_cards" %>
+      <%= partial "print_port_items/postcards" %>
+      <%= partial "print_port_items/canvas" %>
+      <%= partial "print_port_items/flags" %>
+    </ul>
+    <div class="clearfix"></div>
+  </div>
 </div>
-<!--/container-->
-<!--=== End Content Part ===-->
+
