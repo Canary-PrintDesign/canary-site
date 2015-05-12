@@ -1,12 +1,12 @@
 <form name="contact-form"
       action="contact_form.php"
       data-ajax-form
-      data-ajax-sucess="#contact-success"
+      data-ajax-success="#contact-success"
       data-ajax-error="#contact-error">
 
   <label for="name-input">Name</label>
   <div class="input-group">
-    <input type="text" class="form-control" id="name-input" required>
+    <input name="name" type="text" class="form-control" id="name-input" required>
     <span class="input-group-addon"><i class="fa fa-user"></i></span>
   </div>
 
@@ -14,7 +14,7 @@
 
   <label for="email-input">Email Address</label>
   <div class="input-group">
-    <input type="email" class="form-control" id="email-input" required>
+    <input name="email" type="email" class="form-control" id="email-input" required>
     <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
   </div>
 
@@ -22,7 +22,7 @@
 
   <label for="message-input">Your Message</label>
   <div class="input-group">
-    <textarea type="txt" rows="6" class="form-control" id="message-input" placeholder="How can we help?" required></textarea>
+    <textarea name="message" type="txt" rows="6" class="form-control" id="message-input" placeholder="How can we help?" required></textarea>
     <span class="input-group-addon"><i class="fa fa-comment" ></i></span>
   </div>
 
@@ -31,6 +31,20 @@
   <button type="submit" class="btn btn-primary btn-lg">Send message</button>
 </form>
 
-<p id="contact-success" class="hidden">Success!</p>
+<div id="contact-success" class="hidden">
+  <div class="alert alert-success" role="alert">
+    <i class="contact-alert-icon fa fa-thumbs-up animated wow bounceIn" data-wow-duration="4s"></i>
+    Thank you for your message!<br>
+    <p class="alert-success">Your message has been received, and we'll respond as soon as possible.
 
-<p id="contact-error" class="hidden">Error :(</p>
+  </div>
+</div>
+
+<div id="contact-error" class="hidden">
+  <div class="alert alert-danger" role="alert">
+    <i class="contact-alert-icon fa fa-exclamation-triangle animated wow tada" data-wow-duration=".5s" data-wow-iteration="10"></i>
+    Oops!  Something went wrong.<br>
+    <p class="alert-danger">The form didn't submit for some reason.
+    <p class="alert-danger">Please send us an <a class="client-link" href="mailto:info@canaryprint.ca"> email</a> and let us know so we can fix it.
+  </div>
+</div>
