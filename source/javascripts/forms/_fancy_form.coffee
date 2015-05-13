@@ -32,6 +32,7 @@ class FancyForm
   onTrySubmit: =>
     fancy_field.field.trigger('blur') for fancy_field in @_fields
     @validate()
+    return
 
   onSubmitKeypress: (e) =>
     @onTrySubmit() if e.keyCode is KEY_CODE_ENTER
