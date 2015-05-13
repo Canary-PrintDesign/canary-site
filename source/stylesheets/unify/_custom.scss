@@ -35,14 +35,10 @@
   text-decoration: none;
 }
 
-.jumbollax {
-  z-index: 1;
-  height: auto;
-  overflow: hidden;
-  text-align: center;
-  position: relative;
-  background-position: center center;
+@media (max-width:500px) {
+    .jumbollax { background-attachment: scroll !important; }
 }
+
 
 .jumbollax1 { background: url(/images/bg1.jpg) 100% 0 fixed no-repeat; background-size: cover; }
 .jumbollax2 { background: url(/images/bg2.jpg) 100% 0 fixed no-repeat; background-size: cover; }
