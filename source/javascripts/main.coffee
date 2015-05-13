@@ -9,6 +9,7 @@
 #= require forms/_init
 #= require _header_shrink
 #= require _product_tiles
+#= require _featherlight
 
 
 new WOW().init();
