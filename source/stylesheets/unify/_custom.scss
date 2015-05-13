@@ -17,7 +17,10 @@
 
 .filetype-icon {
   height: 50px;
-  margin: 0 auto;
+}
+
+@media only screen and (max-width:1000px) {
+    .filetype-icon { margin-top: 25px; }
 }
 
 .client-link {
