@@ -746,6 +746,7 @@ ul.blog-tags a:hover i {
 .promo-box:hover strong,
 .promo-box:hover strong a {
   color: #72c02c;
+    transition:all 0.15s ease-in-out;
 }
 
 /*Promo Service*/
@@ -805,14 +806,6 @@ ul.blog-tags a:hover i {
 /*Info Blocks*/
 .info-blocks {
   margin-bottom: 15px;
-}
-
-.info-blocks:hover i.icon-info-blocks {
-  color: #72c02c;
-    -webkit-transition:all 0.2s ease-in-out;
-    -moz-transition:all 0.2s ease-in-out;
-    -o-transition:all 0.2s ease-in-out;
-    transition:all 0.2s ease-in-out;
 }
 
 .info-blocks i.icon-info-blocks {
