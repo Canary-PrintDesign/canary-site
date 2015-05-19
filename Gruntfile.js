@@ -21,7 +21,7 @@ module.exports = function(grunt) {
         options: {
           ignore: [
             /carousel/,
-            /collapse/,
+            /collaps/,
             '.success',
             /header/,
             /product/,
@@ -37,9 +37,21 @@ module.exports = function(grunt) {
           ]
         },
         src: ['build/**/*.html'],
-        dest: 'build/stylesheets/main_min.css'
+        dest: 'build/stylesheets/main_uncss.css'
       },
     },
+
+cssmin: {
+  target: {
+    files: [{
+      expand: true,
+      cwd: 'build/stylesheets',
+      src: ['*.css', '!*.min.css'],
+      dest: 'build/stylesheets',
+      ext: '.min.css'
+    }]
+  }
+}
 
   });
 
@@ -48,7 +60,8 @@ module.exports = function(grunt) {
 
   // By default, lint and run all tests.
   grunt.registerTask('default', [
-    'uncss:dist'
+    'uncss:dist',
+    'cssmin'
   ]);
 
 };
