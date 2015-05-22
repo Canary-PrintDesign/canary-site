@@ -1,82 +1,47 @@
 ---
-title: "Canary - Thick Cards"
+title: Canary - Thick Business Cards
 ---
 
-<div class="jumbotron jumbollax jumbollax5">
-  <div class="container">
-    <div class="voffset10"></div>
-    <h1 style="color:#E8E8E8;">Thick Cards</h1>
-    <div class="voffset6"></div>
-  </div>
-</div>
+<%= partial "product_page", locals: {
+  jumbotron_image_number: "5",
+  jumbotron_text: "Thick Business Cards",
 
-<div class="container content">
-  <div class="row portfolio-item margin-bottom-50">
-    <div class="col-md-6 md-margin-bottom-40">
-      <h2>Our most popular seller!!</h2>
-      <p>Almost every company has, and uses, business cards.  Our thick business cards ensure your company looks professional and respectable, and shows you value quality and workmanship</p>
-      <div class="row portfolio-item1">
-        <div class="col-xs-12">
-          <ul class="list-unstyled">
-            <%= partial "specs/card_stock" %>
-              16pt, 18pt, 20pt Plastic
-            <%= partial "specs/end_li" %>
+  product_heading: "Our most popular seller!!",
+  product_desc: "Almost every company has, and uses, business cards.  Our thick business cards ensure your company looks professional and respectable, and shows how much you value quality and workmanship",
 
-            <%= partial "specs/prod_time" %>
-              2-4 Days + Shipping
-            <%= partial "specs/end_li" %>
+  material_name:"Card Stock",
+  material_types:"16pt, 18pt, 20pt Plastic",
+  production_time:"2-4 Days + Shipping",
+  quantity:"500 - 100,000pcs",
+  standard_finishes:"No Coating, AQ, Matte/Dull, Flood UV, Spot UV, Silk Laminate",
+  addl_finishes:"Rounded Corners, Various Sizes Available",
 
-            <%= partial "specs/quantity" %>
-              500 - 100,000pcs
-            <%= partial "specs/end_li" %>
+  image_1:"products/thick1.jpg",
+  desc_1:"A thick card with rounded corners",
 
-            <%= partial "specs/standard_finishes" %>
-              No Coating, AQ, Matte/Dull, Flood UV, Spot UV, Silk Laminate
-            <%= partial "specs/end_li" %>
+  image_2:"products/thick5.jpg",
+  desc_2:"A beautifully designed 16pt card for <a href='http://www.vanislepaddleboardco.com/'> VanIsle Paddleboard Co. </a>",
 
-            <%= partial "specs/addl_finishes" %>
-              Rounded Corners, Various Sizes Available
-            <%= partial "specs/end_li" %>
+  image_3:"",
+  desc_3:"",
 
-            <%= partial "specs/drop_ship" %>
-            Yes!
-            <%= partial "specs/end_li" %>
-          </ul>
-        </div>
-      </div>
-      <a href="/contact" class="btn btn-primary btn-lg rounded spec-button">FREE PRICE QUOTE</a>
-    </div>
+  image_4:"",
+  desc_4:"",
 
-    <div class="col-md-6">
-      <div class="carousel slide carousel-v1" id="myCarousel">
-        <div class="carousel-inner">
-          <div class="item active">
-            <%= image_tag 'products/thick1.jpg' %>
-            <div class="carousel-caption">
-              <p>A thick card with rounded corners</p>
-            </div>
-          </div>
-          <div class="item">
-            <%= image_tag 'products/thick2.jpg' %>
-            <div class="carousel-caption">
-              <p>
-                A beautifully designed 16pt card for <a href="http://www.vanislepaddleboardco.com/"> VanIsle Paddleboard Co. </a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-arrow">
-          <a data-slide="prev" href="#myCarousel" class="left carousel-control">
-            <i class="fa fa-angle-left"></i>
-          </a>
-          <a data-slide="next" href="#myCarousel" class="right carousel-control">
-            <i class="fa fa-angle-right"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
+  image_5:"",
+  desc_5:"",
 
+  image_6:"",
+  desc_6:"",
+
+  related_product_1:"not working1",
+  related_product_2:"not working2",
+  related_product_3:"not working3",
+  related_product_4:"not working4"
+
+} %>
+
+<div class="container">
   <div class="container content">
     <div class="headline">
       <h2 class="pull-left">Related Products</h2>
@@ -92,5 +57,4 @@ title: "Canary - Thick Cards"
     <div class="clearfix"></div>
   </div>
 </div>
-
 

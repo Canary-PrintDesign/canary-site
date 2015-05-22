@@ -2,79 +2,46 @@
 title: "Canary - Foil Cards"
 ---
 
-<div class="jumbotron jumbollax jumbollax5">
-  <div class="container">
-    <div class="voffset10"></div>
-    <h1 style="color:#E8E8E8;">Foil Business Cards</h1>
-    <div class="voffset6"></div>
-  </div>
-</div>
+<%= partial "product_page", locals: {
+  jumbotron_image_number: "5",
+  jumbotron_text: "Foil Business Cards",
 
-<div class="container content">
-  <div class="row portfolio-item margin-bottom-50">
-    <div class="col-md-6 md-margin-bottom-40">
-      <h2>4 out of 5 crows agree - shiny business cards are "squack squack!"</h2>
-      <p>Add a bit of shimmer and shine to your branding by getting Foil Business cards!  Available in Copper, Gold, and Silver, these cards are a nice addition to a professional branding package</p>
-      <div class="row portfolio-item1">
-        <div class="col-xs-12">
-          <ul class="list-unstyled">
-            <%= partial "specs/card_stock" %>
-              14pt, 16pt, 20pt White Plastic
-            <%= partial "specs/end_li" %>
+  product_heading: "Foil adds that much-needed glimmer to your promotional material",
+  product_desc: "Add a bit of shimmer and shine to your branding by getting Foil Business cards!  Available in Copper, Gold, and Silver, these cards are a nice addition to a professional branding package",
 
-            <%= partial "specs/prod_time" %>
-              5-7 Days + Shipping
-            <%= partial "specs/end_li" %>
+  material_name:"Card Stock",
+  material_types:"14pt, 16pt, 20pt White Plastic",
+  production_time:"5-7 Days + Shipping",
+  quantity:"500 - 5,000pcs",
+  standard_finishes:"Spot UV, Silk Laminated, Copper/Gold/Silver Foil",
+  addl_finishes:"Rounded Corners",
 
-            <%= partial "specs/quantity" %>
-              500 - 5,000pcs
-            <%= partial "specs/end_li" %>
+  image_1:"products/foil1.jpg",
+  desc_1:"1 of 2 - Foil reflecting",
 
-            <%= partial "specs/standard_finishes" %>
-              Spot UV, Silk Laminated, Copper/Gold/Silver Foil
-            <%= partial "specs/end_li" %>
+  image_2:"products/foil2.jpg",
+  desc_2:"2 of 2 - Foil sort of reflecting",
 
-            <%= partial "specs/addl_finishes" %>
-              Rounded Corners
-            <%= partial "specs/end_li" %>
+  image_3:"",
+  desc_3:"",
 
-            <%= partial "specs/drop_ship" %>
-            Yes!
-            <%= partial "specs/end_li" %>
-          </ul>
-        </div>
-      </div>
-      <a href="/contact" class="btn btn-primary btn-lg rounded spec-button">FREE PRICE QUOTE</a>
-    </div>
+  image_4:"",
+  desc_4:"",
 
-    <div class="col-md-6">
-      <div class="carousel slide carousel-v1" id="myCarousel">
-        <div class="carousel-inner">
-          <div class="item active">
-            <%= image_tag 'products/foil1.jpg' %>
-            <div class="carousel-caption">
-              <p>1 of 2 - Foil reflecting</p>
-            </div>
-          </div>
-          <div class="item">
-            <%= image_tag 'products/foil2.jpg' %>
-            <div class="carousel-caption">
-              <p>2 of 2 - Foil sort of reflecting</p>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-arrow">
-          <a data-slide="prev" href="#myCarousel" class="left carousel-control">
-            <i class="fa fa-angle-left"></i>
-          </a>
-          <a data-slide="next" href="#myCarousel" class="right carousel-control">
-            <i class="fa fa-angle-right"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
+  image_5:"",
+  desc_5:"",
 
+  image_6:"",
+  desc_6:"",
+
+  related_product_1:"not working1",
+  related_product_2:"not working2",
+  related_product_3:"not working3",
+  related_product_4:"not working4"
+
+} %>
+
+<div class="container">
   <div class="container content">
     <div class="headline">
       <h2 class="pull-left">Related Products</h2>

@@ -2,79 +2,46 @@
 title: "Canary - Flags"
 ---
 
-<div class="jumbotron jumbollax jumbollax5">
-  <div class="container">
-    <div class="voffset10"></div>
-    <h1 style="color:#E8E8E8;">Flags</h1>
-    <div class="voffset6"></div>
-  </div>
-</div>
+<%= partial "product_page", locals: {
+  jumbotron_image_number: "5",
+  jumbotron_text: "Indoor/Outdoor Flags",
 
-<div class="container content">
-  <div class="row portfolio-item margin-bottom-50">
-    <div class="col-md-6 md-margin-bottom-40">
-      <h2>Indoor or Outdoor Flags with stands</h2>
-      <p>Flags are one of the best tools to draw attention, second only to the fan-blown inflated dancing men at car dealerships and cheap strip-malls that wave their arms about wildly.  Coming in both 'feather' (12ft high) and 'tear-drop' (11ft high) styles, our prices are sure to keep your tears from dropping.</p>
-      <div class="row portfolio-item1">
-        <div class="col-xs-12">
-          <ul class="list-unstyled">
-            <%= partial "specs/material" %>
-              3oz Polyester
-            <%= partial "specs/end_li" %>
+  product_heading: "Indoor or Outdoor Flags with stands",
+  product_desc: "Flags are one of the best tools to draw attention, second only to the fan-blown inflated dancing men at car dealerships and cheap strip-malls that wave their arms about wildly.  Coming in both 'feather' (12ft high) and 'tear-drop' (11ft high), with left or right-facing styles",
 
-            <%= partial "specs/prod_time" %>
-              5-7 Days + Shipping
-            <%= partial "specs/end_li" %>
+  material_name:"Material",
+  material_types:"3oz Polyester",
+  production_time:"5-7 Days + Shipping",
+  quantity:"1 - 25pcs",
+  standard_finishes:"Polyester",
+  addl_finishes:"Indoor or Outdoor hardware, left or right facing",
 
-            <%= partial "specs/quantity" %>
-              1 - 25pcs
-            <%= partial "specs/end_li" %>
+  image_1:"products/flag1.jpg",
+  desc_1:"Brighten up your brand",
 
-            <%= partial "specs/standard_finishes" %>
-              Polyester
-            <%= partial "specs/end_li" %>
+  image_2:"products/flag2.jpg",
+  desc_2:"Let your true colors fly!",
 
-            <%= partial "specs/addl_finishes" %>
-              Indoor or Outdoor hardware, left or right facing
-            <%= partial "specs/end_li" %>
+  image_3:"",
+  desc_3:"",
 
-            <%= partial "specs/drop_ship" %>
-            Yes!
-            <%= partial "specs/end_li" %>
-          </ul>
-        </div>
-      </div>
-      <a href="/contact" class="btn btn-primary btn-lg rounded spec-button">FREE PRICE QUOTE</a>
-    </div>
+  image_4:"",
+  desc_4:"",
 
-    <div class="col-md-6">
-      <div class="carousel slide carousel-v1" id="myCarousel">
-        <div class="carousel-inner">
-          <div class="item active">
-            <%= image_tag 'products/flag1.jpg' %>
-            <div class="carousel-caption">
-              <p>Brighten up your brand</p>
-            </div>
-          </div>
-          <div class="item">
-            <%= image_tag 'products/flag2.jpg' %>
-            <div class="carousel-caption">
-              <p>Let your true colors fly!</p>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-arrow">
-          <a data-slide="prev" href="#myCarousel" class="left carousel-control">
-            <i class="fa fa-angle-left"></i>
-          </a>
-          <a data-slide="next" href="#myCarousel" class="right carousel-control">
-            <i class="fa fa-angle-right"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
+  image_5:"",
+  desc_5:"",
 
+  image_6:"",
+  desc_6:"",
+
+  related_product_1:"not working1",
+  related_product_2:"not working2",
+  related_product_3:"not working3",
+  related_product_4:"not working4"
+
+} %>
+
+<div class="container">
   <div class="container content">
     <div class="headline">
       <h2 class="pull-left">Related Products</h2>
@@ -91,4 +58,3 @@ title: "Canary - Flags"
     </div>
   </div>
 </div>
-
