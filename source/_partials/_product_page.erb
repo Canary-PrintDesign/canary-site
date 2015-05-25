@@ -1,90 +1,28 @@
 
-<div class="jumbotron jumbollax jumbollax<%= jumbotron_image_number %>">
+<div class="jumbotron jumbollax jumbollax5">
   <div class="container">
-    <h1 class="product-jumbo"><%= jumbotron_text %></h1>
+    <h1 class="product-jumbo"><%= product[:name] %></h1>
   </div>
 </div>
 
 <div class="container content">
   <div class="row portfolio-item margin-bottom-50">
     <div class="col-md-6 md-margin-bottom-40">
-      <h2><%= product_heading %></h2>
-      <p><%= product_desc %></p>
+      <h2><%= product[:by_line] %></h2>
+      <p><%= product[:description] %></p>
       <div class="row portfolio-item1">
         <div class="col-xs-12">
           <ul class="list-unstyled spec-list">
-            <li>
-              <div class="col-sm-2 spec-col">
-                <i class="fa fa-paste spec-icon"></i>
-              </div>
-              <span class="spec-heading">
-                <%= material_name %>
-              </span>
-              <br>
-              <span class="spec-desc">
-                <%= material_types %>
-              </span>
-            </li>
-            <li>
-              <div class="col-sm-2 spec-col">
-                <i class="fa fa-clock-o spec-icon"></i>
-              </div>
-              <span class="spec-heading">
-                Production Time
-              </span>
-              <br>
-              <span class="spec-desc">
-                <%= production_time %>
-              </span>
-            </li>
-            <li>
-              <div class="col-sm-2 spec-col">
-                <i class="fa fa-rotate-180 fa-sort-amount-asc spec-icon"></i>
-              </div>
-              <span class="spec-heading">
-                Quantity
-              </span>
-              <br>
-              <span class="spec-desc">
-                <%= quantity %>
-              </span>
-            </li>
-            <li>
-              <div class="col-sm-2 spec-col">
-                <i class="fa fa-cog spec-icon"></i>
-              </div>
-              <span class="spec-heading">
-                Standard Finishes
-              </span>
-              <br>
-              <span class="spec-desc">
-                <%= standard_finishes %>
-              </span>
-            </li>
-            <li>
-              <div class="col-sm-2 spec-col">
-                <i class="fa fa-cogs spec-icon"></i>
-              </div>
-              <span class="spec-heading">
-                Additional Finishes
-              </span>
-              <br>
-              <span class="spec-desc">
-                <%= addl_finishes %>
-              </span>
-            </li>
-            <li>
-              <div class="col-sm-2 spec-col">
-                <i class="fa fa-truck spec-icon"></i>
-              </div>
-              <span class="spec-heading">
-                Drop-Shipping and Tracking
-              </span>
-              <br>
-              <span class="spec-desc">
-                Yes!
-              </span>
-            </li>
+            <% product[:tags].each do |tag| %>
+              <li>
+                <div class="col-sm-2 spec-col">
+                  <i class="fa <%= tag[:icon_class] %> spec-icon"></i>
+                </div>
+                <span class="spec-heading"><%= tag[:name] %></span>
+                <br>
+                <span class="spec-desc"><%= tag[:value] %></span>
+              </li>
+            <% end %>
           </ul>
         </div>
       </div>
@@ -96,62 +34,14 @@
     <div class="col-md-6">
       <div class="carousel slide carousel-v1" id="myCarousel">
         <div class="carousel-inner">
-
-
-          <div class="item active">
-            <%= image_tag image_1 %>
-            <div class="carousel-caption">
-              <p>
-                <%= desc_1 %>
-              </p>
+          <% product[:images].each_with_index do |image, index| %>
+            <div class="item <%= 'active' if index == 0 %>">
+              <%= image_tag image[:src] %>
+              <div class="carousel-caption">
+                <p><%= image[:caption] %></p>
+              </div>
             </div>
-          </div>
-
-          <div class="item">
-            <%= image_tag image_2 %>
-            <div class="carousel-caption">
-              <p>
-                <%= desc_2 %>
-              </p>
-            </div>
-          </div>
-
-          <div class="item">
-            <%= image_tag image_3 %>
-            <div class="carousel-caption">
-              <p>
-                <%= desc_3 %>
-              </p>
-            </div>
-          </div>
-
-          <div class="item">
-            <%= image_tag image_4 %>
-            <div class="carousel-caption">
-              <p>
-                <%= desc_4 %>
-              </p>
-            </div>
-          </div>
-
-          <div class="item">
-            <%= image_tag image_5 %>
-            <div class="carousel-caption">
-              <p>
-                <%= desc_5 %>
-              </p>
-            </div>
-          </div>
-
-          <div class="item">
-            <%= image_tag image_6 %>
-            <div class="carousel-caption">
-              <p>
-                <%= desc_6 %>
-              </p>
-            </div>
-          </div>
-
+          <% end %>
         </div>
         <div class="carousel-arrow">
           <a data-slide="prev" href="#myCarousel" class="left carousel-control">
@@ -165,18 +55,19 @@
     </div>
   </div>
 
-  <div class="container content">
-    <div class="headline">
-      <h2 class="pull-left">Related Products</h2>
+  <div class="container">
+    <div class="container content">
+      <div class="headline">
+        <h2 class="pull-left">Related Products</h2>
+      </div>
     </div>
-  </div>
-  <div class="sorting-block">
-    <ul class="row sorting-grid">
-      <%= related_product_1 %>
-      <%= related_product_2 %>
-      <%= related_product_3 %>
-      <%= related_product_4 %>
-    </ul>
-    <div class="clearfix"></div>
+    <div class="sorting-block">
+      <ul class="row sorting-grid">
+        <% related_products.each do |product_name| %>
+          <%= partial "print_port_items/#{product_name}" %>
+        <% end %>
+      </ul>
+      <div class="clearfix"></div>
+    </div>
   </div>
 </div>

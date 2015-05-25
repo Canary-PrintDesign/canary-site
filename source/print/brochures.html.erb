@@ -3,58 +3,43 @@ title: "Canary - Brochures"
 ---
 
 <%= partial "product_page", locals: {
-  jumbotron_image_number: "5",
-  jumbotron_text: "Brochures",
-
-  product_heading: "Brochures and Flyers - Use them for menus, price-lists, services, and many more!",
-  product_desc: "Our premium quality brochures and flyers are an effective way of getting important information to your clients",
-
-  material_name:"Paper Stock",
-  material_types:"70lb, 80lb, 100lb",
-  production_time:"2-4 Days + Shipping",
-  quantity:"100 - 25,000pcs",
-  standard_finishes:"No Coating, AQ, Satin AQ, UV",
-  addl_finishes:"Folding and Bundling available",
-
-  image_1:"products/brochure1.jpg",
-  desc_1:"<a href='http://www.synergydayspa.ca/'>Synergy Day Spa</a> - services and prices brochure",
-
-  image_2:"products/brochure2.jpg",
-  desc_2:"A diagram of the various folds available",
-
-  image_3:"",
-  desc_3:"",
-
-  image_4:"",
-  desc_4:"",
-
-  image_5:"",
-  desc_5:"",
-
-  image_6:"",
-  desc_6:"",
-
-  related_product_1:"not working1",
-  related_product_2:"not working2",
-  related_product_3:"not working3",
-  related_product_4:"not working4"
-
+  product: {
+    name:        "Brochures",
+    by_line:     "Brochures and Flyers - Use them for menus, price-lists, services, and many more!",
+    description: "Our premium quality brochures and flyers are an effective way of getting important information to your clients",
+    images: [{
+      src:         "products/brochure1.jpg",
+      caption:     "<a href='http://www.synergydayspa.ca/'>Synergy Day Spa</a> - services and prices brochure",
+    }, {
+      src:         "products/brochure2.jpg",
+      caption:     "A diagram of the various folds available",
+    }],
+    tags: [{
+      icon_class:  "fa-paste",
+      name:        "Paper Stock",
+      value:       "70lb, 80lb, 100lb"
+    }, {
+      icon_class:  "fa-clock-o",
+      name:        "Production Time",
+      value:       "2-4 Days + Shipping"
+    }, {
+      icon_class:  "fa-rotate-180 fa-sort-amount-asc",
+      name:        "Quantity",
+      value:       "100 - 25,000pcs"
+    }, {
+      icon_class:  "fa-cog",
+      name:        "Standard Finishes",
+      value:       "No Coating, AQ, Satin AQ, UV"
+    }, {
+      icon_class:  "fa-cogs",
+      name:        "Additional Finishes",
+      value:       "Folding and Bundling available"
+    }]
+  },
+  related_products: [
+    "postcards",
+    "banners",
+    "posters",
+    "silk_cards"
+  ]
 } %>
-
-<div class="container">
-  <div class="container content">
-    <div class="headline">
-      <h2 class="pull-left">Related Products</h2>
-    </div>
-  </div>
-  <div class="sorting-block">
-    <ul class="row sorting-grid">
-        <%= partial "print_port_items/postcards" %>
-        <%= partial "print_port_items/banners" %>
-        <%= partial "print_port_items/posters" %>
-        <%= partial "print_port_items/silk_cards" %>
-      </ul>
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</div>

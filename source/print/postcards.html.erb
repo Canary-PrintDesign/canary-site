@@ -3,58 +3,46 @@ title: "Canary - Postcards / Rack Cards"
 ---
 
 <%= partial "product_page", locals: {
-  jumbotron_image_number: "5",
-  jumbotron_text: "Postcards and Rack Cards",
-
-  product_heading: "Bulk-Mail ad compaigns?  We do that too!",
-  product_desc: "Postcards and Rack Cards are fantastic tools for generating additional business.  Let us take care of your bulk-mailing campaigns to get the word out about your company, products, and services!!",
-
-  material_name:"Card Stock",
-  material_types:"100lb, 100lb Linen, 14pt, 16pt, 18pt",
-  production_time:"2-4 Days + Shipping",
-  quantity:"1,000 - 25,000pcs",
-  standard_finishes:"AQ, Matte/Dull, Silk Laminate, Flood UV, Spot UV",
-  addl_finishes:"Bundling",
-
-  image_1:"products/postcard1.jpg",
-  desc_1:"A well-design postcard for <a href='http://aslanventures.ca'>Aslan Ventures</a>",
-
-  image_2:"products/postcard2.jpg",
-  desc_2:"This guy loves postcards and boxes!",
-
-  image_3:"products/postcard3.jpg",
-  desc_3:"Promote your business with postcards",
-
-  image_4:"",
-  desc_4:"",
-
-  image_5:"",
-  desc_5:"",
-
-  image_6:"",
-  desc_6:"",
-
-  related_product_1:"not working1",
-  related_product_2:"not working2",
-  related_product_3:"not working3",
-  related_product_4:"not working4"
-
+  product: {
+    name:        "Postcards and Rack Cards",
+    by_line:     "Bulk-Mail ad compaigns?  We do that too!",
+    description: "Postcards and Rack Cards are fantastic tools for generating additional business.  Let us take care of your bulk-mailing campaigns to get the word out about your company, products, and services!!",
+    images: [{
+      src:         "products/postcard1.jpg",
+      caption:     "A well-design postcard for <a href='http://aslanventures.ca'>Aslan Ventures</a>",
+    }, {
+      src:         "products/postcard2.jpg",
+      caption:     "Custom banners to improve your sales",
+    }, {
+      src:         "products/postcard3.jpg",
+      caption:     "Promote your business with postcards",
+    }],
+    tags: [{
+      icon_class:  "fa-paste",
+      name:        "Card Stock",
+      value:       "100lb, 100lb Linen, 14pt, 16pt, 18pt"
+    }, {
+      icon_class:  "fa-clock-o",
+      name:        "Production Time",
+      value:       "2-4 Days + Shipping"
+    }, {
+      icon_class:  "fa-rotate-180 fa-sort-amount-asc",
+      name:        "Quantity",
+      value:       "1,000 - 25,000pcs"
+    }, {
+      icon_class:  "fa-cog",
+      name:        "Standard Finishes",
+      value:       "AQ, Matte/Dull, Silk Laminate, Flood UV, Spot UV"
+    }, {
+      icon_class:  "fa-cogs",
+      name:        "Additional Finishes",
+      value:       "Bundling"
+    }]
+  },
+  related_products: [
+    "brochures",
+    "silk_cards",
+    "foil_cards",
+    "thick_cards"
+  ]
 } %>
-
-<div class="container">
-  <div class="container content">
-    <div class="headline">
-      <h2 class="pull-left">Related Products</h2>
-    </div>
-  </div>
-  <div class="sorting-block">
-    <ul class="row sorting-grid">
-      <%= partial "print_port_items/brochures" %>
-      <%= partial "print_port_items/silk_cards" %>
-      <%= partial "print_port_items/foil_cards" %>
-      <%= partial "print_port_items/thick_cards" %>
-    </ul>
-    <div class="clearfix"></div>
-  </div>
-</div>
-

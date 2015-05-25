@@ -3,58 +3,46 @@ title: "Canary - Mounted Canvas"
 ---
 
 <%= partial "product_page", locals: {
-  jumbotron_image_number: "5",
-  jumbotron_text: "Mounted Canvas",
-
-  product_heading: "Show off or sell your artwork with Mounted Canvas Prints",
-  product_desc: "No longer restricted to the rich and powerful, mounted canvas is growing in popularity amongst us regular folks.  Show off your artwork or sell prints of your art online with our mounted canvas!  Mounted on light and durable wooden stretcher bars.",
-
-  material_name:"Material",
-  material_types:"17mil Artist Canvas",
-  production_time:"2-4 Days + Shipping",
-  quantity:"1 - 50pcs",
-  standard_finishes:"Canvas",
-  addl_finishes:"Ships in secured packages",
-
-  image_1:"products/canvas1.jpg",
-  desc_1:"Make your artwork stand out!",
-
-  image_2:"products/canvas2.jpg",
-  desc_2:"Get classy",
-
-  image_3:"products/canvas3.jpg",
-  desc_3:"Get fancy",
-
-  image_4:"",
-  desc_4:"",
-
-  image_5:"",
-  desc_5:"",
-
-  image_6:"",
-  desc_6:"",
-
-  related_product_1:"not working1",
-  related_product_2:"not working2",
-  related_product_3:"not working3",
-  related_product_4:"not working4"
-
+  product: {
+    name:        "Mounted Canvas",
+    by_line:     "Show off or sell your artwork with Mounted Canvas Prints",
+    description: "No longer restricted to the rich and powerful, mounted canvas is growing in popularity amongst us regular folks.  Show off your artwork or sell prints of your art online with our mounted canvas!  Mounted on light and durable wooden stretcher bars.",
+    images: [{
+      src:         "products/canvas1.jpg",
+      caption:     "Make your artwork stand out!",
+    }, {
+      src:         "products/canvas2.jpg",
+      caption:     "Get classy",
+    }, {
+      src:         "products/canvas3.jpg",
+      caption:     "Get fancy",
+    }],
+    tags: [{
+      icon_class:  "fa-paste",
+      name:        "Material",
+      value:       "17mil Artist Canvas"
+    }, {
+      icon_class:  "fa-clock-o",
+      name:        "Production Time",
+      value:       "2-4 Days + Shipping"
+    }, {
+      icon_class:  "fa-rotate-180 fa-sort-amount-asc",
+      name:        "Quantity",
+      value:       "1 - 50pcs"
+    }, {
+      icon_class:  "fa-cog",
+      name:        "Standard Finishes",
+      value:       "Canvas"
+    }, {
+      icon_class:  "fa-cogs",
+      name:        "Additional Finishes",
+      value:       "Ships in secured packages"
+    }]
+  },
+  related_products: [
+    "banners",
+    "postcards",
+    "posters",
+    "brochures"
+  ]
 } %>
-
-<div class="container">
-  <div class="container content">
-    <div class="headline">
-      <h2 class="pull-left">Related Products</h2>
-    </div>
-  </div>
-  <div class="sorting-block">
-    <ul class="row sorting-grid">
-        <%= partial "print_port_items/banners" %>
-        <%= partial "print_port_items/postcards" %>
-        <%= partial "print_port_items/posters" %>
-        <%= partial "print_port_items/brochures" %>
-      </ul>
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</div>

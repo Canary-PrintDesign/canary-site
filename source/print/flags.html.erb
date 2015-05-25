@@ -3,58 +3,43 @@ title: "Canary - Flags"
 ---
 
 <%= partial "product_page", locals: {
-  jumbotron_image_number: "5",
-  jumbotron_text: "Indoor/Outdoor Flags",
-
-  product_heading: "Indoor or Outdoor Flags with stands",
-  product_desc: "Flags are one of the best tools to draw attention, second only to the fan-blown inflated dancing men at car dealerships and cheap strip-malls that wave their arms about wildly.  Coming in both 'feather' (12ft high) and 'tear-drop' (11ft high), with left or right-facing styles",
-
-  material_name:"Material",
-  material_types:"3oz Polyester",
-  production_time:"5-7 Days + Shipping",
-  quantity:"1 - 25pcs",
-  standard_finishes:"Polyester",
-  addl_finishes:"Indoor or Outdoor hardware, left or right facing",
-
-  image_1:"products/flag1.jpg",
-  desc_1:"Brighten up your brand",
-
-  image_2:"products/flag2.jpg",
-  desc_2:"Let your true colors fly!",
-
-  image_3:"",
-  desc_3:"",
-
-  image_4:"",
-  desc_4:"",
-
-  image_5:"",
-  desc_5:"",
-
-  image_6:"",
-  desc_6:"",
-
-  related_product_1:"not working1",
-  related_product_2:"not working2",
-  related_product_3:"not working3",
-  related_product_4:"not working4"
-
+  product: {
+    name:        "Indoor/Outdoor Flags",
+    by_line:     "Indoor or Outdoor Flags with stands",
+    description: "Flags are one of the best tools to draw attention, second only to the fan-blown inflated dancing men at car dealerships and cheap strip-malls that wave their arms about wildly.  Coming in both 'feather' (12ft high) and 'tear-drop' (11ft high), with left or right-facing styles",
+    images: [{
+      src:         "products/flag1.jpg",
+      caption:     "Brighten up your brand",
+    }, {
+      src:         "products/flag2.jpg",
+      caption:     "Let your true colors fly!",
+    }],
+    tags: [{
+      icon_class:  "fa-paste",
+      name:        "Material",
+      value:       "3oz Polyester"
+    }, {
+      icon_class:  "fa-clock-o",
+      name:        "Production Time",
+      value:       "5-7 Days + Shipping"
+    }, {
+      icon_class:  "fa-rotate-180 fa-sort-amount-asc",
+      name:        "Quantity",
+      value:       "1 - 25pcs"
+    }, {
+      icon_class:  "fa-cog",
+      name:        "Standard Finishes",
+      value:       "Polyester"
+    }, {
+      icon_class:  "fa-cogs",
+      name:        "Additional Finishes",
+      value:       "Indoor or Outdoor hardware, left or right facing"
+    }]
+  },
+  related_products: [
+    "banners",
+    "posters",
+    "brochures",
+    "postcards"
+  ]
 } %>
-
-<div class="container">
-  <div class="container content">
-    <div class="headline">
-      <h2 class="pull-left">Related Products</h2>
-    </div>
-  </div>
-  <div class="sorting-block">
-    <ul class="row sorting-grid">
-        <%= partial "print_port_items/banners" %>
-        <%= partial "print_port_items/posters" %>
-        <%= partial "print_port_items/brochures" %>
-        <%= partial "print_port_items/postcards" %>
-      </ul>
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</div>

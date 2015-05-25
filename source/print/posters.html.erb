@@ -3,58 +3,43 @@ title: "Canary - Posters"
 ---
 
 <%= partial "product_page", locals: {
-  jumbotron_image_number: "5",
-  jumbotron_text: "Posters",
-
-  product_heading: 'Posters - natures way of saying "get over here"!',
-  product_desc: "Often used for upselling in-store, or for promotions/events.  Hang on walls, in windows, or on telephone poles.",
-
-  material_name:"Card Stock",
-  material_types:"12pt Card Stock, Photo Paper",
-  production_time:"2-4 Days + Shipping",
-  quantity:"1 - 150pcs",
-  standard_finishes:"C2S (12pt), Gloss (Photopaper)",
-  addl_finishes:"Securely shipped in cardboard tubes",
-
-  image_1:"products/poster1.jpg",
-  desc_1:"Impress your clients",
-
-  image_2:"products/poster2.jpg",
-  desc_2:"SAY IT LOUD!",
-
-  image_3:"",
-  desc_3:"",
-
-  image_4:"",
-  desc_4:"",
-
-  image_5:"",
-  desc_5:"",
-
-  image_6:"",
-  desc_6:"",
-
-  related_product_1:"not working1",
-  related_product_2:"not working2",
-  related_product_3:"not working3",
-  related_product_4:"not working4"
-
+  product: {
+    name:        "Posters",
+    by_line:     'Posters - natures way of saying "get over here"!',
+    description: "Often used for upselling in-store, or for promotions/events.  Hang on walls, in windows, or on telephone poles.",
+    images: [{
+      src:         "products/poster1.jpg",
+      caption:     "Impress your clients",
+    }, {
+      src:         "products/poster2.jpg",
+      caption:     "SAY IT LOUD!",
+    }],
+    tags: [{
+      icon_class:  "fa-paste",
+      name:        "Card Stock",
+      value:       "12pt Card Stock, Photo Paper"
+    }, {
+      icon_class:  "fa-clock-o",
+      name:        "Production Time",
+      value:       "2-4 Days + Shipping"
+    }, {
+      icon_class:  "fa-rotate-180 fa-sort-amount-asc",
+      name:        "Quantity",
+      value:       "1 - 150pcs"
+    }, {
+      icon_class:  "fa-cog",
+      name:        "Standard Finishes",
+      value:       "C2S (12pt), Gloss (Photopaper)"
+    }, {
+      icon_class:  "fa-cogs",
+      name:        "Additional Finishes",
+      value:       "Securely shipped in cardboard tubes"
+    }]
+  },
+  related_products: [
+    "brochures",
+    "banners",
+    "canvas",
+    "flags"
+  ]
 } %>
-
-<div class="container">
-  <div class="container content">
-    <div class="headline">
-      <h2 class="pull-left">Related Products</h2>
-    </div>
-  </div>
-  <div class="sorting-block">
-    <ul class="row sorting-grid">
-      <%= partial "print_port_items/brochures" %>
-      <%= partial "print_port_items/banners" %>
-      <%= partial "print_port_items/canvas" %>
-      <%= partial "print_port_items/flags" %>
-    </ul>
-    <div class="clearfix"></div>
-  </div>
-</div>
-

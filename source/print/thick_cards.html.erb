@@ -3,58 +3,43 @@ title: Canary - Thick Business Cards
 ---
 
 <%= partial "product_page", locals: {
-  jumbotron_image_number: "5",
-  jumbotron_text: "Thick Business Cards",
-
-  product_heading: "Our most popular seller!!",
-  product_desc: "Almost every company has, and uses, business cards.  Our thick business cards ensure your company looks professional and respectable, and shows how much you value quality and workmanship",
-
-  material_name:"Card Stock",
-  material_types:"16pt, 18pt, 20pt Plastic",
-  production_time:"2-4 Days + Shipping",
-  quantity:"500 - 100,000pcs",
-  standard_finishes:"No Coating, AQ, Matte/Dull, Flood UV, Spot UV, Silk Laminate",
-  addl_finishes:"Rounded Corners, Various Sizes Available",
-
-  image_1:"products/thick1.jpg",
-  desc_1:"A thick card with rounded corners",
-
-  image_2:"products/thick5.jpg",
-  desc_2:"A beautifully designed 16pt card for <a href='http://www.vanislepaddleboardco.com/'> VanIsle Paddleboard Co. </a>",
-
-  image_3:"",
-  desc_3:"",
-
-  image_4:"",
-  desc_4:"",
-
-  image_5:"",
-  desc_5:"",
-
-  image_6:"",
-  desc_6:"",
-
-  related_product_1:"not working1",
-  related_product_2:"not working2",
-  related_product_3:"not working3",
-  related_product_4:"not working4"
-
+  product: {
+    name:        "Thick Business Cards",
+    by_line:     "Our most popular seller!!",
+    description: "Almost every company has, and uses, business cards.  Our thick business cards ensure your company looks professional and respectable, and shows how much you value quality and workmanship",
+    images: [{
+      src:         "products/thick1.jpg",
+      caption:     "A thick card with rounded corners",
+    }, {
+      src:         "products/thick5.jpg",
+      caption:     "A beautifully designed 16pt card for <a href='http://www.vanislepaddleboardco.com/'> VanIsle Paddleboard Co. </a>",
+    }],
+    tags: [{
+      icon_class:  "fa-paste",
+      name:        "Card Stock",
+      value:       "16pt, 18pt, 20pt Plastic"
+    }, {
+      icon_class:  "fa-clock-o",
+      name:        "Production Time",
+      value:       "2-4 Days + Shipping"
+    }, {
+      icon_class:  "fa-rotate-180 fa-sort-amount-asc",
+      name:        "Quantity",
+      value:       "500 - 100,000pcs"
+    }, {
+      icon_class:  "fa-cog",
+      name:        "Standard Finishes",
+      value:       "No Coating, AQ, Matte/Dull, Flood UV, Spot UV, Silk Laminate"
+    }, {
+      icon_class:  "fa-cogs",
+      name:        "Additional Finishes",
+      value:       "Rounded Corners, Various Sizes Available"
+    }]
+  },
+  related_products: [
+    "foil_cards",
+    "silk_cards",
+    "standard_cards",
+    "postcards"
+  ]
 } %>
-
-<div class="container">
-  <div class="container content">
-    <div class="headline">
-      <h2 class="pull-left">Related Products</h2>
-    </div>
-  </div>
-  <div class="sorting-block">
-    <ul class="row sorting-grid">
-      <%= partial "print_port_items/foil_cards" %>
-      <%= partial "print_port_items/silk_cards" %>
-      <%= partial "print_port_items/standard_cards" %>
-      <%= partial "print_port_items/postcards" %>
-    </ul>
-    <div class="clearfix"></div>
-  </div>
-</div>
-

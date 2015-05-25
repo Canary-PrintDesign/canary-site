@@ -3,58 +3,46 @@ title: "Canary - Silk Cards"
 ---
 
 <%= partial "product_page", locals: {
-  jumbotron_image_number: "5",
-  jumbotron_text: "Silk-Laminated Business Cards",
-
-  product_heading: "Silky smooth and soft cards?  Yes please!",
-  product_desc: "A client favorite, these cards get an immediate reaction when handing them to prospective clients and investors.  The silk-laminate finish also helps protect against the three worst elements - Earth, Wind, and Fire.  and water.",
-
-  material_name:"Card Stock",
-  material_types:"14pt, 16pt, 18pt",
-  production_time:"2-4 Days + Shipping",
-  quantity:"100 - 10,000pcs",
-  standard_finishes:"Spot-UV, Metallic Foil",
-  addl_finishes:"Rounded Corners",
-
-  image_1:"products/silk1.jpg",
-  desc_1:"1 of 2 - Silk card + Spot UV",
-
-  image_2:"products/silk2.jpg",
-  desc_2:"2 of 2 - Silk card + Spot UV.  Just look at that glimmer!!",
-
-  image_3:"products/silk3.jpg",
-  desc_3:"Silk card with a custom Spot UV bridge for an engineering company",
-
-  image_4:"",
-  desc_4:"",
-
-  image_5:"",
-  desc_5:"",
-
-  image_6:"",
-  desc_6:"",
-
-  related_product_1:"not working1",
-  related_product_2:"not working2",
-  related_product_3:"not working3",
-  related_product_4:"not working4"
-
+  product: {
+    name:        "Silk-Laminated Business Cards",
+    by_line:     "Silky smooth and soft cards?  Yes please!",
+    description: "A client favorite, these cards get an immediate reaction when handing them to prospective clients and investors.  The silk-laminate finish also helps protect against the three worst elements - Earth, Wind, and Fire.  and water.",
+    images: [{
+      src:         "products/silk1.jpg",
+      caption:     "1 of 2 - Silk card + Spot UV",
+    }, {
+      src:         "products/silk2.jpg",
+      caption:     "2 of 2 - Silk card + Spot UV.  Just look at that glimmer!!",
+    }, {
+      src:         "products/silk3.jpg",
+      caption:     "Silk card with a custom Spot UV bridge for an engineering company",
+    }],
+    tags: [{
+      icon_class:  "fa-paste",
+      name:        "Card Stock",
+      value:       "14pt, 16pt, 18pt"
+    }, {
+      icon_class:  "fa-clock-o",
+      name:        "Production Time",
+      value:       "2-4 Days + Shipping"
+    }, {
+      icon_class:  "fa-rotate-180 fa-sort-amount-asc",
+      name:        "Quantity",
+      value:       "100 - 10,000pcs"
+    }, {
+      icon_class:  "fa-cog",
+      name:        "Standard Finishes",
+      value:       "Spot-UV, Metallic Foil"
+    }, {
+      icon_class:  "fa-cogs",
+      name:        "Additional Finishes",
+      value:       "Rounded Corners"
+    }]
+  },
+  related_products: [
+    "foil_cards",
+    "postcards",
+    "canvas",
+    "flags"
+  ]
 } %>
-
-<div class="container">
-  <div class="container content">
-    <div class="headline">
-      <h2 class="pull-left">Related Products</h2>
-    </div>
-  </div>
-  <div class="sorting-block">
-    <ul class="row sorting-grid">
-      <%= partial "print_port_items/foil_cards" %>
-      <%= partial "print_port_items/postcards" %>
-      <%= partial "print_port_items/canvas" %>
-      <%= partial "print_port_items/flags" %>
-    </ul>
-    <div class="clearfix"></div>
-  </div>
-</div>
-

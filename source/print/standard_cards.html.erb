@@ -3,58 +3,43 @@ title: "Canary - Business Cards"
 ---
 
 <%= partial "product_page", locals: {
-  jumbotron_image_number: "5",
-  jumbotron_text: "Standard Business Cards",
-
-  product_heading: "Great Value and amazing prices",
-  product_desc: "Don't need anything fancy, and don't like thick business cards?  These cards are tough to beat for price.  The prices are so low, we can't even show them on the website for fear of being harassed by other print companies!",
-
-  material_name:"Card Stock",
-  material_types:"14pt",
-  production_time:"2-4 Days + Shipping",
-  quantity:"100 - 100,000pcs",
-  standard_finishes:"AQ, Matte/Dull, Metallic, Pearl, Natural, Spot UV, Silk-Laminate",
-  addl_finishes:"Rounded Corners",
-
-  image_1:"products/standard1.jpg",
-  desc_1:"A standard thickness card for <a href='http://calvorihearing.com'> Calvori Hearing</a>",
-
-  image_2:"products/standard2.jpg",
-  desc_2:"A standard thickness card for <a href='http://www.vanislepaddleboardco.com/'>VanIsle Paddleboard Co.</a>",
-
-  image_3:"",
-  desc_3:"",
-
-  image_4:"",
-  desc_4:"",
-
-  image_5:"",
-  desc_5:"",
-
-  image_6:"",
-  desc_6:"",
-
-  related_product_1:"not working1",
-  related_product_2:"not working2",
-  related_product_3:"not working3",
-  related_product_4:"not working4"
-
+  product: {
+    name:        "Standard Business Cards",
+    by_line:     "Great Value and amazing prices",
+    description: "Don't need anything fancy, and don't like thick business cards?  These cards are tough to beat for price.  The prices are so low, we can't even show them on the website for fear of being harassed by other print companies!",
+    images: [{
+      src:         "products/standard1.jpg",
+      caption:     "A standard thickness card for <a href='http://calvorihearing.com'> Calvori Hearing</a>",
+    }, {
+      src:         "products/standard2.jpg",
+      caption:     "A standard thickness card for <a href='http://www.vanislepaddleboardco.com/'>VanIsle Paddleboard Co.</a>",
+    }],
+    tags: [{
+      icon_class:  "fa-paste",
+      name:        "Card Stock",
+      value:       "14pt"
+    }, {
+      icon_class:  "fa-clock-o",
+      name:        "Production Time",
+      value:       "2-4 Days + Shipping"
+    }, {
+      icon_class:  "fa-rotate-180 fa-sort-amount-asc",
+      name:        "Quantity",
+      value:       "100 - 100,000pcs"
+    }, {
+      icon_class:  "fa-cog",
+      name:        "Standard Finishes",
+      value:       "AQ, Matte/Dull, Metallic, Pearl, Natural, Spot UV, Silk-Laminate"
+    }, {
+      icon_class:  "fa-cogs",
+      name:        "Additional Finishes",
+      value:       "Rounded Corners"
+    }]
+  },
+  related_products: [
+    "silk_cards",
+    "foil_cards",
+    "thick_cards",
+    "postcards"
+  ]
 } %>
-
-<div class="container">
-  <div class="container content">
-    <div class="headline">
-      <h2 class="pull-left">Related Products</h2>
-    </div>
-  </div>
-  <div class="sorting-block">
-    <ul class="row sorting-grid">
-      <%= partial "print_port_items/silk_cards" %>
-      <%= partial "print_port_items/foil_cards" %>
-      <%= partial "print_port_items/thick_cards" %>
-      <%= partial "print_port_items/postcards" %>
-    </ul>
-    <div class="clearfix"></div>
-  </div>
-</div>
-

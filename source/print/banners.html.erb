@@ -3,58 +3,46 @@ title: "Canary - Banners"
 ---
 
 <%= partial "product_page", locals: {
-  jumbotron_image_number: "5",
-  jumbotron_text: "Banners",
-
-  product_heading: "Get noticed with our durable banners!",
-  product_desc: "Canary provides banners for indoor or outdoor use.  Choose from different thicknesses of fabric, vinyl, and even mesh!",
-
-  material_name:"Material",
-  material_types:"17mil Artist Canvas, 5-15oz Vinyl, 8oz Mesh",
-  production_time:"2-4 Days + Shipping",
-  quantity:"1 - 150pcs",
-  standard_finishes:"Fabric, Vinyl, or Mesh",
-  addl_finishes:"Grommets + Hems, Pole Pockets",
-
-  image_1:"products/banner1.jpg",
-  desc_1:"Speak Big!  Think Loud!",
-
-  image_2:"products/banner2.jpg",
-  desc_2:"Custom banners to improve your sales",
-
-  image_3:"products/banner3.jpg",
-  desc_3:"Many sizes and uses",
-
-  image_4:"",
-  desc_4:"",
-
-  image_5:"",
-  desc_5:"",
-
-  image_6:"",
-  desc_6:"",
-
-  related_product_1:"not working1",
-  related_product_2:"not working2",
-  related_product_3:"not working3",
-  related_product_4:"not working4"
-
+  product: {
+    name:        "Banners",
+    by_line:     "Get noticed with our durable banners!",
+    description: "Canary provides banners for indoor or outdoor use.  Choose from different thicknesses of fabric, vinyl, and even mesh!",
+    images: [{
+      src:         "products/banner1.jpg",
+      caption:     "Speak Big!  Think Loud!",
+    }, {
+      src:         "products/banner2.jpg",
+      caption:     "Custom banners to improve your sales",
+    }, {
+      src:         "products/banner3.jpg",
+      caption:     "Many sizes and uses",
+    }],
+    tags: [{
+      icon_class:  "fa-paste",
+      name:        "Material",
+      value:       "17mil Artist Canvas, 5-15oz Vinyl, 8oz Mesh"
+    }, {
+      icon_class:  "fa-clock-o",
+      name:        "Production Time",
+      value:       "2-4 Days + Shipping"
+    }, {
+      icon_class:  "fa-rotate-180 fa-sort-amount-asc",
+      name:        "Quantity",
+      value:       "1 - 150pcs"
+    }, {
+      icon_class:  "fa-cog",
+      name:        "Standard Finishes",
+      value:       "Fabric, Vinyl, or Mesh"
+    }, {
+      icon_class:  "fa-cogs",
+      name:        "Additional Finishes",
+      value:       "Grommets + Hems, Pole Pockets"
+    }]
+  },
+  related_products: [
+    "posters",
+    "flags",
+    "canvas",
+    "brochures"
+  ]
 } %>
-
-<div class="container">
-  <div class="container content">
-    <div class="headline">
-      <h2 class="pull-left">Related Products</h2>
-    </div>
-  </div>
-  <div class="sorting-block">
-    <ul class="row sorting-grid">
-        <%= partial "print_port_items/posters" %>
-        <%= partial "print_port_items/flags" %>
-        <%= partial "print_port_items/canvas" %>
-        <%= partial "print_port_items/brochures" %>
-      </ul>
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</div>
