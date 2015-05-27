@@ -17,3 +17,6 @@ gem "middleman-bootstrap-navbar", :require => false
 gem "bootstrap-sass", :require => false
 gem "jquery-middleman", :require => false
 gem 'font-awesome-middleman'
+
+# Sitemap Generator for Search Engines
+gem 'middleman-search_engine_sitemap'

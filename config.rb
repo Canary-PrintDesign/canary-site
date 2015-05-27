@@ -81,3 +81,6 @@ configure :build do
 end
 
 activate :directory_indexes
+
+activate :search_engine_sitemap
+set :url_root, 'http://wwww.canaryprint.ca'
