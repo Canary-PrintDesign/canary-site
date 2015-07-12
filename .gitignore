@@ -4,8 +4,8 @@
 # or operating system, you probably want to add a global ignore instead:
 # git config --global core.excludesfile ~/.gitignore_global
 
-# Ignore bundler config
-/.bundle
+# Custom bundler dir
+/gems
 
 # Ignore the build directory
 /build
@@ -19,4 +19,3 @@
 
 vendor/assets/bower_components
 node_modules
-
