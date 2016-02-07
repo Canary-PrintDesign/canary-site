@@ -1,0 +1,22 @@
+language: ruby
+rvm:
+- '2.2'
+cache: bundler
+install:
+- bundle install
+- npm install -g bower
+- bower install
+script:
+- bundle exec middleman build
+deploy:
+deploy:
+  - provider: script
+    script: scripts/deploy_to_bucket.sh dev.canaryprint.ca
+  - provider: script
+    script: scripts/deploy_to_bucket.sh staging.canaryprint.ca
+    on:
+      branch: master
+  - provider: script
+    script: scripts/deploy_to_bucket.sh www.canaryprint.ca
+    on:
+      branch: production
