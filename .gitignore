@@ -19,3 +19,5 @@
 
 vendor/assets/bower_components
 node_modules
+
+.env
