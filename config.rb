@@ -81,8 +81,6 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
-
-  activate :gzip
 end
 
 activate :directory_indexes
@@ -100,6 +98,7 @@ activate :s3_sync do |s3_sync|
   s3_sync.prefer_gzip                = true
   s3_sync.path_style                 = true
   s3_sync.reduced_redundancy_storage = false
+  s3_sync.prefer_gzip                = false
   s3_sync.acl                        = 'public-read'
   s3_sync.encryption                 = false
   s3_sync.prefix                     = ''
