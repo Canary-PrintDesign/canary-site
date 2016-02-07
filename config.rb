@@ -40,9 +40,9 @@ require 'jquery-middleman'
 # activate :automatic_image_sizes
 
 # Reload the browser automatically whenever files change
- configure :development do
-   activate :livereload, :host => '127.0.0.1'
- end
+configure :development do
+  activate :livereload, :host => '127.0.0.1'
+end
 
 # Methods defined in the helpers block are available in templates
 # helpers do
@@ -78,8 +78,6 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
-
-  activate :imageoptim
 
   activate :gzip
 end

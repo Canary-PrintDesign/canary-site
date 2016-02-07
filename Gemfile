@@ -21,6 +21,4 @@ gem 'font-awesome-middleman'
 # Sitemap Generator for Search Engines
 gem 'middleman-search_engine_sitemap'
 
-gem 'middleman-imageoptim'
-
 gem 'middleman-s3_sync'
