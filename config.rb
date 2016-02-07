@@ -1,3 +1,6 @@
+require 'dotenv'
+Dotenv.load
+
 require 'bootstrap-sass'
 require 'jquery-middleman'
 
