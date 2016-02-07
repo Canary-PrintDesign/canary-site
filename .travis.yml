@@ -1,0 +1,16 @@
+language: ruby
+rvm:
+- '2.2'
+cache: bundler
+install:
+- bundle install
+- npm install -g bower
+- bower install
+script:
+- bundle exec middleman build
+- sh bin/deploy.sh
+env:
+  global:
+    - AWS_REGION='us-west-2'
+    - AWS_ACCESS_KEY_ID=AKIAISKCJZYSJN2AFITA
+    - secure: UmjD1K+vxZVXUlvvMgis2tc3gWIUBXjgrV8qRibQ/SyL88jc/AVDqvj133w6HhrPiyki9mrNNJxDanDpJzmW7NLiNzCGnHrZYfjLhKC9D/02JBacxdFOYVUl8vALNiL3+c2Eb1cHkemsq9T6CFochOvqU+hchgdJxXT41aeMOHg=
