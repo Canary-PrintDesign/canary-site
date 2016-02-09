@@ -6,7 +6,7 @@ class AjaxForm
     @form.on
       submit: @onSubmit
 
-  loadingButtonText: '<i class="fa fa-spinner rotate-icon-animation"></i> Loading...'
+  loadingButtonText: '<i class="icon-spinner rotate-icon-animation"></i> Loading...'
 
   loading: =>
     @submitButton.html(@loadingButtonText)
