@@ -8,7 +8,7 @@ install:
 - bower install
 script:
 - bundle exec middleman build
-- sh bin/deploy.sh
+- bash bin/deploy.sh
 env:
   global:
     - AWS_REGION='us-west-2'
