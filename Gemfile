@@ -21,6 +21,7 @@ gem "bootstrap-sass", :require => false
 gem "jquery-middleman", :require => false
 gem 'font-awesome-middleman'
 
+gem "bourbon"
 gem "fontello_rails_converter", github: "StemboltHQ/fontello_rails_converter"
 
 # Sitemap Generator for Search Engines
