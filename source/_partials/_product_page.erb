@@ -15,12 +15,15 @@
           <ul class="list-unstyled spec-list">
             <% product[:tags].each do |tag| %>
               <li>
-                <div class="col-sm-2 spec-col">
-                  <i class="fa <%= tag[:icon_class] %> spec-icon"></i>
+                <div class="media">
+                  <div class="media-left">
+                    <i class="<%= tag[:icon_class] %> spec-icon"></i>
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading spec-heading"><%= tag[:name] %></h4>
+                    <p><%= tag[:value] %></p>
+                  </div>
                 </div>
-                <span class="spec-heading"><%= tag[:name] %></span>
-                <br>
-                <span class="spec-desc"><%= tag[:value] %></span>
               </li>
             <% end %>
           </ul>
@@ -45,10 +48,10 @@
         </div>
         <div class="carousel-arrow">
           <a data-slide="prev" href="#myCarousel" class="left carousel-control">
-            <i class="fa fa-angle-left"></i>
+            <i class="icon-angle-left"></i>
           </a>
           <a data-slide="next" href="#myCarousel" class="right carousel-control">
-            <i class="fa fa-angle-right"></i>
+            <i class="icon-angle-right"></i>
           </a>
         </div>
       </div>
