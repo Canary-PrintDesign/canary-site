@@ -5,6 +5,7 @@ source 'https://rubygems.org'
 gem "dotenv"
 
 gem "middleman", "~>3.3.10"
+gem 'middleman-imageoptim'
 
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.1.0"
