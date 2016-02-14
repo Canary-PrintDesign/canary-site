@@ -1,43 +1,3 @@
-/*----------------------------------------------------------------------
-
-[-----*** TABLE OF CONTENT ***-----]
-
-1. Header - Navbar
-2. Header - Menu Inner Right Style
-3. Header - Responsive Navbar Style
-4. Header - Submenu
-5. Header - Mega Menu
-6. Header - Fixed
-7. Header - Border Bottom Style Option
-8. Header - White Transparent Background Option
-9. Header - Dark Transparent Background Option
-10. Header - Dark On Scroll Option
-11. Header - Dark Search Option
-12. Header - Dark Dropdown Background Option
-13. Header - Dark Responsive Navbar Option
-14. Header - Classic White Option
-15. Header - Classic Dark Option
-
-
-[--- HEADER STYLE CLASSES --]
-
-1. header-v6
-2. header-border-bottom
-3. header-white-transparent
-4. header-dark-transparent
-5. header-dark-scroll
-6. header-dark-search
-7. header-dark-dropdown
-8. header-dark-res-nav
-9. header-dark-classic-white
-10. header-dark-classic-dark
------------------------------------------------------------------------*/
-
-
-/*--------------------------------------------------
-  [1. Header - Navbar]
-----------------------------------------------------*/
-
 /*Header v6*/
 .header-v6 {
   z-index: 99;
@@ -1043,21 +1003,6 @@
 }
 
 
-/*--------------------------------------------------
-  [8. Header - White Transparent Background Option]
-----------------------------------------------------*/
-
-/*Navbar*/
-.header-v6.header-white-transparent .navbar {
-  background: rgba(255,255,255,0.5);
-}
-
-/*Media Queries*/
-@media (min-width: 992px) {
-  .header-fixed .header-v6.header-white-transparent.header-fixed-shrink .navbar {
-    background: #fff;
-  }
-}
 
 
 /*--------------------------------------------------
