@@ -10,10 +10,9 @@
 @import "unify/app";
 @import "unify/unify";
 @import "unify/animate";
-@import "unify/header";
+
 @import "unify/custom";
-@import "unify/dev";
-@import "unify/pricing";
+
 
 @import "components/portfolio";
 @import "components/product_tiles";
@@ -21,6 +20,9 @@
 @import "components/featherlight";
 
 @import "modules/footer";
+@import "modules/header";
 
 @import "pages/faq";
 @import "pages/product_page";
+@import "pages/dev";
+@import "pages/pricing";
