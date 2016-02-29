@@ -11,19 +11,21 @@
 }
 
 .spec-heading {
+  margin-bottom: 0;
   font-weight: 800;
   vertical-align: top;
-}
-
-.spec-desc {
 }
 
 .spec-col {
   padding-left: 0px !important;
 }
 
-.spec-list li {
-  margin-bottom: 15px;
+.spec-list .media-left {
+  width: percentage(2/12);
+}
+
+.icon-rotate-180::before {
+  @include transform(rotate(180deg));
 }
 
 .btn-free-quote,

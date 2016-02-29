@@ -1,3 +1,13 @@
+GIT
+  remote: git://github.com/StemboltHQ/fontello_rails_converter.git
+  revision: 01565d4a6ced2a67a3252f4e72e7e8041f0a1572
+  specs:
+    fontello_rails_converter (0.4.2)
+      activesupport
+      launchy
+      rest-client
+      rubyzip (~> 1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -7,6 +17,7 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
+    addressable (2.4.0)
     ansi (1.5.0)
     autoprefixer-rails (6.3.1)
       execjs
@@ -16,6 +27,9 @@ GEM
     bootstrap-sass (3.3.6)
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
+    bourbon (4.2.6)
+      sass (~> 3.4)
+      thor (~> 0.19)
     builder (3.2.2)
     celluloid (0.16.0)
       timers (~> 4.0.0)
@@ -91,6 +105,8 @@ GEM
       thor (>= 0.14, < 2.0)
     json (1.8.3)
     kramdown (1.9.0)
+    launchy (2.4.3)
+      addressable (~> 2.3)
     listen (2.10.1)
       celluloid (~> 0.16.0)
       rb-fsevent (>= 0.9.3)
@@ -174,7 +190,10 @@ GEM
     rb-fsevent (0.9.7)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
+    rest-client (1.6.7)
+      mime-types (>= 1.16)
     ruby-progressbar (1.7.5)
+    rubyzip (1.1.7)
     sass (3.4.21)
     sprockets (2.12.4)
       hike (~> 1.2)
@@ -208,8 +227,10 @@ PLATFORMS
 
 DEPENDENCIES
   bootstrap-sass
+  bourbon
   dotenv
   font-awesome-middleman
+  fontello_rails_converter!
   jquery-middleman
   middleman (~> 3.3.10)
   middleman-bootstrap-navbar

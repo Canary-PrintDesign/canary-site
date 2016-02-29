@@ -1,8 +1,9 @@
 @import "variables";
 @import "mixins";
 
+@import "bourbon";
 @import "custom_bootstrap";
-@import "font-awesome";
+@import "vendor/fontello";
 
 // Unify
 // TODO: assimilate this stuff into manageable files
