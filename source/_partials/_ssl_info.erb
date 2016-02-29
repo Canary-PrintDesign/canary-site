@@ -1,0 +1,93 @@
+  <div class="container content-sm">
+    <div class="row margin-bottom-40">
+      <div class="col-md-5 col-sm-6">
+        <div class="pricing hover-effect">
+          <div class="pricing-head pricing-silver">
+            <h3>SSL Standard<span>Encryption for your website</span></h3>
+            <h4><i>$</i>5<i>.99</i> <span>Per Month <br> + one-time $249 Installation/Testing/Verification</span></h4>
+          </div>
+          <ul class="pricing-content list-unstyled">
+            <li class="animated wow fadeIn" data-wow-delay=".1s">
+              <i class="icon-certificate"></i> SSL Certificate
+            </li>
+            <li class="animated wow fadeIn" data-wow-delay=".2s">
+              <i class="icon-google"></i> Google-recognized Protection<span></span>
+            </li>
+            <li class="animated wow fadeIn" data-wow-delay=".3s">
+              <i class="icon-lock"></i> HTTPS Encryption<span></span>
+            </li>
+          </ul>
+          <button href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=FDLMRBR7SKSDL" class="btn btn-success buy-button btn-block" type="button" id="sendNewSms" disabled/>
+            <i class="icon-basket"></i> Buy silver plan now!
+          </button>
+          <ul>
+            <span class="buy-button"><input type="checkbox" id="checkme"/></span>
+              <span class="terms">
+                <%= link_to 'I have read the Terms/Conditions', '/payment/terms.html' %>
+              </span>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="service-block no-margin-bottom">
+          <i class="icon-exchange choice-arrows"></i>
+        </div>
+      </div>
+      <div class="col-md-5 col-sm-6">
+        <div class="pricing hover-effect">
+          <div class="pricing-head pricing-gold">
+            <h3  class="service-block-yellow">Enhanced Security <span>Advanced Protection for your Business</span></h3>
+            <h4><i>$</i>5<i>.99</i><i>+</i><i>$</i>24<i>.99</i><span>Per Month <br> + one-time $249 Installation/Testing/Verification</span></h4>
+          </div>
+          <ul class="pricing-content list-unstyled">
+            <li class="animated wow fadeIn" data-wow-delay=".1s">
+              <i class="icon-certificate"></i> SSL Certificate</li>
+            <li class="animated wow fadeIn" data-wow-delay=".2s">
+              <i class="icon-google"></i> Google-recognized Protection<span></span>
+            </li>
+            <li class="animated wow fadeIn" data-wow-delay=".3s">
+              <i class="icon-lock"></i> HTTPS Encryption<span></span>
+            </li>
+            <li class="animated wow fadeIn" data-wow-delay=".4s">
+              <i class="icon-fast-forward"></i> Faster Site Performance (via CDN)
+            </li>
+            <li class="animated wow fadeIn" data-wow-delay=".5s">
+              <i class="icon-picture"></i> Image/CSS Optimizations
+            </li>
+            <li class="animated wow fadeIn" data-wow-delay=".6s">
+              <i class="icon-flash"></i> Cache Optimizations</li>
+            <li class="animated wow fadeIn" data-wow-delay=".7s">
+              <i class="icon-exchange"></i> Web Application Firewall
+            </li>
+            <li class="animated wow fadeIn" data-wow-delay=".8s">
+              <i class="icon-shield"></i> Protection against Hacking
+            </li>
+            <li class="animated wow fadeIn" data-wow-delay=".9s">
+              <i class="icon-shield"></i> Protection against Malicious Scripts
+            </li>
+            <li class="animated wow fadeIn" data-wow-delay="1s">
+              <i class="icon-shield"></i> Protection against SQL Injection
+            </li>
+          </ul>
+          <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=D7RGHZN6AXN3C" class="btn btn-success buy-button btn-block" />
+            <i class="icon-basket"></i> Buy gold plan now!
+          </a>
+          <ul>
+            <span class="buy-button"></span>
+              <span class="terms">
+                <%= link_to 'Terms + Conditions', '/payment/terms.html' %>
+              </span>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script>
+var checker = document.getElementById('checkme');
+var sendbtn = document.getElementById('sendNewSms');
+checker.onchange = function() {
+if(this.checked) sendbtn.disabled = false;
+else sendbtn.disabled = true;
+};
+</script>

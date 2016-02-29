@@ -1,5 +1,21 @@
-.payment-icon {
-  font-size: 100px;
+input[type="checkbox"] {
+  height: 25px;
+  width: 25px;
+  margin-right: 10px;
+  margin-top: 10px;
+  }
+.buy-button {
+  border-radius: 0px;
+  font-size: 25px;
+  margin-top: 15px;
+}
+.terms {
+  font-size: 13px;
+  margin-top: 15px;
+  vertical-align: super;
+}
+.choice-arrows {
+  font-size: 75px;
   color: #888;
 }
 .no-space-pricing [class^="col-"],
