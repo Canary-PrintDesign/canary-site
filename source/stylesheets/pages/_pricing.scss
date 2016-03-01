@@ -1,3 +1,9 @@
+.thick-line {
+  border-top: solid 3px #949494;
+}
+.plan {
+  text-align: center;
+}
 input[type="checkbox"] {
   height: 25px;
   width: 25px;
@@ -55,7 +61,7 @@ input[type="checkbox"] {
   font-style:italic;
 }
 .pricing-head h3 {
-  color:#fafafa;
+  color:#616161;
   padding:12px 0;
   font-size:35px;
   font-family:Arial;
@@ -66,7 +72,7 @@ input[type="checkbox"] {
   text-shadow:0 1px 0 #888;
 }
 .pricing-gold h3 {
-  background:#D9A441;
+  background:#FFDF00;
   text-shadow:0 1px 0 #888;
 }
 .pricing-head h4 {
