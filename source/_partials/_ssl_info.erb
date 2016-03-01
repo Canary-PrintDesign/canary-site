@@ -1,97 +1,102 @@
-  <div class="container content-sm">
-    <div class="row margin-bottom-40">
-      <div class="col-md-5 col-sm-6">
-        <form class="pricing hover-effect" method="get" action="https://www.paypal.com/cgi-bin/webscr">
-          <input type="hidden" name="cmd" value="_s-xclick">
-          <input type="hidden" name="hosted_button_id" value="FDLMRBR7SKSDL">
-          <div class="pricing-head pricing-silver">
-            <h3>SSL Standard<span>Encryption for your website</span></h3>
-            <h4><i>$</i>5<i>.99</i> <span>Per Month <br> + one-time $249 Installation/Testing/Verification</span></h4>
-          </div>
-          <ul class="pricing-content list-unstyled">
-            <li class="animated wow fadeIn" data-wow-delay=".1s">
-              <i class="icon-certificate"></i> SSL Certificate
-            </li>
-            <li class="animated wow fadeIn" data-wow-delay=".2s">
-              <i class="icon-google"></i> Google-recognized Protection<span></span>
-            </li>
-            <li class="animated wow fadeIn" data-wow-delay=".3s">
-              <i class="icon-lock"></i> HTTPS Encryption<span></span>
-            </li>
-          </ul>
-          <button type="submit" class="btn btn-success buy-button btn-block" />
-            <i class="icon-basket"></i> Buy silver plan now!
-          </button>
-          <ul>
-            <span class="buy-button"><input type="checkbox" required/></span>
-              <span class="terms">
-                <%= link_to 'I have read the Terms/Conditions', '/payment/terms.html' %>
-              </span>
-          </ul>
-        </form>
-      </div>
-      <div class="col-md-2">
-        <div class="service-block no-margin-bottom">
-          <i class="icon-exchange choice-arrows"></i>
+<div class="container content-sm">
+  <div class="row margin-bottom-40">
+    <div class="col-md-5 col-sm-6">
+      <h1 class="plan"><b>SILVER PLAN</b></h1>
+      <form class="pricing silver-shadow hover-effect" method="get" action="https://www.paypal.com/cgi-bin/webscr">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="FDLMRBR7SKSDL">
+
+        <div class="pricing-head pricing-silver">
+          <h3>SSL Standard<span>Encryption for your website</span></h3>
+          <h4><i>$</i>5<i>.99</i> <span>Per Month <br> + one-time $249 Installation/Testing/Verification</span></h4>
         </div>
-      </div>
-      <div class="col-md-5 col-sm-6">
-        <form class="pricing hover-effect" method="get" action="https://www.paypal.com/cgi-bin/webscr">
-          <input type="hidden" name="cmd" value="_s-xclick">
-          <input type="hidden" name="hosted_button_id" value="D7RGHZN6AXN3C">
-          <div class="pricing-head pricing-gold">
-            <h3  class="service-block-yellow">Enhanced Security <span>Advanced Protection for your Business</span></h3>
-            <h4><i>$</i>5<i>.99</i><i>+</i><i>$</i>24<i>.99</i><span>Per Month <br> + one-time $249 Installation/Testing/Verification</span></h4>
-          </div>
-          <ul class="pricing-content list-unstyled">
-            <li class="animated wow fadeIn" data-wow-delay=".1s">
-              <i class="icon-certificate"></i> SSL Certificate</li>
-            <li class="animated wow fadeIn" data-wow-delay=".2s">
-              <i class="icon-google"></i> Google-recognized Protection<span></span>
-            </li>
-            <li class="animated wow fadeIn" data-wow-delay=".3s">
-              <i class="icon-lock"></i> HTTPS Encryption<span></span>
-            </li>
-            <li class="animated wow fadeIn" data-wow-delay=".4s">
-              <i class="icon-fast-forward"></i> Faster Site Performance (via CDN)
-            </li>
-            <li class="animated wow fadeIn" data-wow-delay=".5s">
-              <i class="icon-picture"></i> Image/CSS Optimizations
-            </li>
-            <li class="animated wow fadeIn" data-wow-delay=".6s">
-              <i class="icon-flash"></i> Cache Optimizations</li>
-            <li class="animated wow fadeIn" data-wow-delay=".7s">
-              <i class="icon-exchange"></i> Web Application Firewall
-            </li>
-            <li class="animated wow fadeIn" data-wow-delay=".8s">
-              <i class="icon-shield"></i> Protection against Hacking
-            </li>
-            <li class="animated wow fadeIn" data-wow-delay=".9s">
-              <i class="icon-shield"></i> Protection against Malicious Scripts
-            </li>
-            <li class="animated wow fadeIn" data-wow-delay="1s">
-              <i class="icon-shield"></i> Protection against SQL Injection
-            </li>
-          </ul>
-          <button type="submit" class="btn btn-success buy-button btn-block" />
-            <i class="icon-basket"></i> Buy gold plan now!
-          </button>
-          <ul>
-            <span class="buy-button"><input type="checkbox" required/></span>
-              <span class="terms">
-                <%= link_to 'I have read the Terms/Conditions', '/payment/terms.html' %>
-              </span>
-          </ul>
-        </form>
+        <ul class="pricing-content list-unstyled">
+          <li class="animated wow fadeIn" data-wow-delay=".1s">
+            <i class="icon-certificate"></i> SSL Certificate
+          </li>
+          <li class="animated wow fadeIn" data-wow-delay=".2s">
+            <i class="icon-google"></i> Google-recognized Protection
+          </li>
+          <li class="animated wow fadeIn" data-wow-delay=".3s">
+            <i class="icon-lock"></i> HTTPS Encryption
+          </li>
+        </ul>
+        <button type="submit" class="btn btn-success buy-button btn-block" />
+          <i class="icon-basket"></i> Buy silver plan now!
+        </button>
+        <ul>
+          <span class="buy-button"><input type="checkbox" required/></span>
+            <span class="terms">
+              <%= link_to 'I have read the Terms/Conditions', '/payment/terms.html' %>
+            </span>
+        </ul>
+      </form>
+    </div>
+    <div class="col-md-2">
+      <div class="service-block no-margin-bottom">
+        <i class="icon-exchange choice-arrows"></i>
       </div>
     </div>
+    <div class="col-md-5 col-sm-6">
+      <h1 class="plan"><b>GOLD PLAN</b></h1>
+      <form class="pricing hover-effect" method="get" action="https://www.paypal.com/cgi-bin/webscr">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="D7RGHZN6AXN3C">
+        <div class="pricing-head pricing-gold">
+          <h3  class="service-block-yellow">Enhanced Security<span>Advanced Protection for your Business</span></h3>
+          <h4><i>$</i>5<i>.99</i><i>+</i><i>$</i>24<i>.99</i><span>Per Month <br> + one-time $249 Installation/Testing/Verification</span></h4>
+        </div>
+        <ul class="pricing-content list-unstyled">
+          <li class="animated wow fadeIn" data-wow-delay=".1s">
+            <i class="icon-certificate"></i> SSL Certificate
+          </li>
+          <li class="animated wow fadeIn" data-wow-delay=".2s">
+            <i class="icon-google"></i> Google-recognized Protection
+          </li>
+          <li class="animated wow fadeIn" data-wow-delay=".3s">
+            <i class="icon-lock"></i> HTTPS Encryption
+          </li>
+          <li class="animated wow fadeIn thick-line" data-wow-delay=".4s">
+            <i class="icon-plus"></i><b>PLUS THESE ADDITIONAL FEATURES</b>
+          </li>
+          <li class="animated wow fadeIn thick-line" data-wow-delay=".4s">
+            <i class="icon-google"></i> Higher Google Ranking
+          </li>
+          <li class="animated wow fadeIn" data-wow-delay=".5s">
+            <i class="icon-attention"></i> SEO Optimizations
+          </li>
+          <li class="animated wow fadeIn" data-wow-delay=".6s">
+            <i class="icon-fast-forward"></i> Faster Site Performance (via CDN)
+          </li>
+          <li class="animated wow fadeIn" data-wow-delay=".7s">
+            <i class="icon-picture"></i> Image/CSS Optimizations
+          </li>
+          <li class="animated wow fadeIn" data-wow-delay=".8s">
+            <i class="icon-flash"></i> Cache Optimizations
+          </li>
+          <li class="animated wow fadeIn" data-wow-delay=".9s">
+            <i class="icon-exchange"></i> Web Application Firewall
+          </li>
+          <li class="animated wow fadeIn" data-wow-delay="1s">
+            <i class="icon-shield"></i> Protection against Hacking
+          </li>
+          <li class="animated wow fadeIn" data-wow-delay="1.1s">
+            <i class="icon-shield"></i> Protection against Malicious Scripts
+          </li>
+          <li class="animated wow fadeIn" data-wow-delay="1.2s">
+            <i class="icon-shield"></i> Protection against SQL Injection
+          </li>
+        </ul>
+        <button type="submit" class="btn btn-success buy-button btn-block" />
+          <i class="icon-basket"></i> Buy gold plan now!
+        </button>
+        <ul>
+          <span class="buy-button"><input type="checkbox" required/></span>
+            <span class="terms">
+              <%= link_to 'I have read the Terms/Conditions', '/payment/terms.html' %>
+            </span>
+        </ul>
+      </form>
+    </div>
   </div>
-
-<script>
-var checker = document.getElementById('checkme');
-var sendbtn = document.getElementById('sendNewSms');
-checker.onchange = function() {
-if(this.checked) sendbtn.disabled = false;
-else sendbtn.disabled = true;
-};
-</script>
+</div>
