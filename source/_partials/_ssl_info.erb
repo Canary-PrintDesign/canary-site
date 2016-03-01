@@ -1,7 +1,9 @@
   <div class="container content-sm">
     <div class="row margin-bottom-40">
       <div class="col-md-5 col-sm-6">
-        <div class="pricing hover-effect">
+        <form class="pricing hover-effect" method="get" action="https://www.paypal.com/cgi-bin/webscr">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="FDLMRBR7SKSDL">
           <div class="pricing-head pricing-silver">
             <h3>SSL Standard<span>Encryption for your website</span></h3>
             <h4><i>$</i>5<i>.99</i> <span>Per Month <br> + one-time $249 Installation/Testing/Verification</span></h4>
@@ -17,16 +19,16 @@
               <i class="icon-lock"></i> HTTPS Encryption<span></span>
             </li>
           </ul>
-          <button href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=FDLMRBR7SKSDL" class="btn btn-success buy-button btn-block" type="button" id="sendNewSms" disabled/>
+          <button type="submit" class="btn btn-success buy-button btn-block" />
             <i class="icon-basket"></i> Buy silver plan now!
           </button>
           <ul>
-            <span class="buy-button"><input type="checkbox" id="checkme"/></span>
+            <span class="buy-button"><input type="checkbox" required/></span>
               <span class="terms">
                 <%= link_to 'I have read the Terms/Conditions', '/payment/terms.html' %>
               </span>
           </ul>
-        </div>
+        </form>
       </div>
       <div class="col-md-2">
         <div class="service-block no-margin-bottom">
@@ -34,7 +36,9 @@
         </div>
       </div>
       <div class="col-md-5 col-sm-6">
-        <div class="pricing hover-effect">
+        <form class="pricing hover-effect" method="get" action="https://www.paypal.com/cgi-bin/webscr">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="D7RGHZN6AXN3C">
           <div class="pricing-head pricing-gold">
             <h3  class="service-block-yellow">Enhanced Security <span>Advanced Protection for your Business</span></h3>
             <h4><i>$</i>5<i>.99</i><i>+</i><i>$</i>24<i>.99</i><span>Per Month <br> + one-time $249 Installation/Testing/Verification</span></h4>
@@ -69,16 +73,16 @@
               <i class="icon-shield"></i> Protection against SQL Injection
             </li>
           </ul>
-          <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=D7RGHZN6AXN3C" class="btn btn-success buy-button btn-block" />
+          <button type="submit" class="btn btn-success buy-button btn-block" />
             <i class="icon-basket"></i> Buy gold plan now!
-          </a>
+          </button>
           <ul>
-            <span class="buy-button"></span>
+            <span class="buy-button"><input type="checkbox" required/></span>
               <span class="terms">
-                <%= link_to 'Terms + Conditions', '/payment/terms.html' %>
+                <%= link_to 'I have read the Terms/Conditions', '/payment/terms.html' %>
               </span>
           </ul>
-        </div>
+        </form>
       </div>
     </div>
   </div>
