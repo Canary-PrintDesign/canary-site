@@ -1,4 +1,7 @@
 <?php
+
+// This file does NOTHING until moved to http://static-files.canaryprint.ca/canaryprint.ca/contact-forms/
+
 header("Access-Control-Allow-Origin: https://www.canaryprint.ca");
 $name = Trim(stripslashes($_POST['name']));
 $email = Trim(stripslashes($_POST['email']));
