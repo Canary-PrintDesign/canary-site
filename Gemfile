@@ -4,19 +4,13 @@ source 'https://rubygems.org'
 
 gem "dotenv"
 
-gem "middleman", "~>3.3.10"
-gem 'middleman-imageoptim'
-
-# Live-reloading plugin
-gem "middleman-livereload", "~> 3.1.0"
+gem "middleman", "~>4"
+gem "middleman-livereload"
 
 
 # Windows does not come with time zone data
 gem "tzinfo-data", platforms: [:mswin, :mingw]
 
-
-# Bootstrap Dependencies
-gem "middleman-bootstrap-navbar", :require => false
 gem "bootstrap-sass", :require => false
 gem "jquery-middleman", :require => false
 gem 'font-awesome-middleman'

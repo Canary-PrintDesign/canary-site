@@ -54,16 +54,20 @@ end
 #   end
 # end
 
+activate :external_pipeline,
+         name: :webpack,
+         command: build? ?
+         "./node_modules/webpack/bin/webpack.js --bail -p" :
+         "./node_modules/webpack/bin/webpack.js --watch -d --progress --color",
+         source: ".tmp/dist",
+         latency: 1
+
 set :css_dir, 'stylesheets'
 
 set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 images_dir = "images"
-
-set :partials_dir, '_partials'
-
-sprockets.append_path File.join root, 'vendor/assets/bower_components'
 
 # Build-specific configuration
 configure :build do
@@ -78,13 +82,6 @@ configure :build do
 
   # Use relative URLs
    activate :relative_assets
-
-  # Or use a different image path
-  # set :http_prefix, "/Content/images/"
-  activate :imageoptim do |options|
-     # imageoptim bug workaround https://github.com/plasticine/middleman-imageoptim/issues/45#issuecomment-139136446
-    options.manifest = false
-  end
 end
 
 activate :directory_indexes
