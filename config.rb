@@ -54,6 +54,14 @@ end
 #   end
 # end
 
+activate :external_pipeline,
+         name: :webpack,
+         command: build? ?
+         "./node_modules/webpack/bin/webpack.js --bail -p" :
+         "./node_modules/webpack/bin/webpack.js --watch -d --progress --color",
+         source: ".tmp/dist",
+         latency: 1
+
 set :css_dir, 'stylesheets'
 
 set :js_dir, 'javascripts'
