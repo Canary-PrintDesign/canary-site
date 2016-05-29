@@ -63,8 +63,6 @@ images_dir = "images"
 
 set :partials_dir, '_partials'
 
-sprockets.append_path File.join root, 'vendor/assets/bower_components'
-
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
