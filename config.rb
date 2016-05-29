@@ -78,13 +78,6 @@ configure :build do
 
   # Use relative URLs
    activate :relative_assets
-
-  # Or use a different image path
-  # set :http_prefix, "/Content/images/"
-  activate :imageoptim do |options|
-     # imageoptim bug workaround https://github.com/plasticine/middleman-imageoptim/issues/45#issuecomment-139136446
-    options.manifest = false
-  end
 end
 
 activate :directory_indexes
