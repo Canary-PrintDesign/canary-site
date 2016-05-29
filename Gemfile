@@ -4,10 +4,8 @@ source 'https://rubygems.org'
 
 gem "dotenv"
 
-gem "middleman", "~>3.3.10"
-
-# Live-reloading plugin
-gem "middleman-livereload", "~> 3.1.0"
+gem "middleman", "~>4"
+gem "middleman-livereload"
 
 
 # Windows does not come with time zone data
