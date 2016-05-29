@@ -22,8 +22,6 @@ GEM
     autoprefixer-rails (6.3.1)
       execjs
       json
-    bootstrap-navbar (2.2.4)
-      gem_config (~> 0.3)
     bootstrap-sass (3.3.6)
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
@@ -80,7 +78,6 @@ GEM
       middleman-core (~> 3.0)
     formatador (0.2.5)
     fspath (2.1.1)
-    gem_config (0.3.1)
     haml (4.0.7)
       tilt
     hike (1.2.3)
@@ -123,9 +120,6 @@ GEM
       middleman-sprockets (>= 3.1.2)
       sass (>= 3.4.0, < 4.0)
       uglifier (~> 2.5)
-    middleman-bootstrap-navbar (2.0.0)
-      bootstrap-navbar (~> 2.0)
-      middleman-core (>= 3.0)
     middleman-core (3.3.12)
       activesupport (~> 4.1.0)
       bundler (~> 1.1)
@@ -233,7 +227,6 @@ DEPENDENCIES
   fontello_rails_converter!
   jquery-middleman
   middleman (~> 3.3.10)
-  middleman-bootstrap-navbar
   middleman-imageoptim
   middleman-livereload (~> 3.1.0)
   middleman-s3_sync

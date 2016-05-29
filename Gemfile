@@ -14,9 +14,6 @@ gem "middleman-livereload", "~> 3.1.0"
 # Windows does not come with time zone data
 gem "tzinfo-data", platforms: [:mswin, :mingw]
 
-
-# Bootstrap Dependencies
-gem "middleman-bootstrap-navbar", :require => false
 gem "bootstrap-sass", :require => false
 gem "jquery-middleman", :require => false
 gem 'font-awesome-middleman'
