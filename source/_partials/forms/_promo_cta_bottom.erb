@@ -1,0 +1,32 @@
+<form name="contact-form"
+    action="https://static-files.canaryprint.ca/canaryprint.ca/contact-forms/contact_form.php"
+    data-ajax-form
+    data-ajax-success="#contact-success"
+    data-ajax-error="#contact-error">
+  <div class="col-md-6 nopadding">
+    <div class="input-group">
+      <input name="email" type="email" class="form-control promo-cta-form" id="email-input" required placeholder="Enter your email">
+      <span class="input-group-addon"><i class="icon-mail"></i></span>
+    </div>
+  </div>
+  <div class="col-md-5">
+    <button type="submit" class="btn btn-primary btn-lg promo-cta-btn">I want new cards!</button>
+    <div class="voffset7"></div>
+  </div>
+</form>
+<div id="contact-success" class="hidden">
+  <div class="alert alert-success" role="alert">
+    <i class="contact-alert-icon icon-thumbs-up animated wow bounceIn" data-wow-duration="4s"></i>
+    Thank you for your message!<br>
+    <p class="alert-success">Your message has been received, and we'll respond as soon as possible.
+  </div>
+</div>
+
+<div id="contact-error" class="hidden">
+  <div class="alert alert-danger" role="alert">
+    <i class="contact-alert-icon icon-attention animated wow tada" data-wow-duration=".5s" data-wow-iteration="10"></i>
+    Oops!  Something went wrong.<br>
+    <p class="alert-danger">The form didn't submit for some reason.
+    <p class="alert-danger">Please send us an <a class="client-link" href="mailto:info@canaryprint.ca"> email</a> and let us know so we can fix it.
+  </div>
+</div>

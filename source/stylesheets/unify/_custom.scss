@@ -1,3 +1,7 @@
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
 
 .equal-height-column {
   min-height: 200px;
@@ -63,7 +67,7 @@
 .jumbollax3 { background: url(/images/bg3.jpg) 100% 0 fixed no-repeat; background-size: cover; }
 .jumbollax4 { background: url(/images/bg4.jpg) 100% 0 fixed no-repeat; background-size: cover; }
 .jumbollax5 { background: url(/images/bg5.jpg) 100% 0 fixed no-repeat; background-size: cover; }
-.jumbollax6 { background: url(/images/bg6.jpg) 100% 0 fixed no-repeat; background-size: cover; }
+.jumbollax6 { background: url(/images/bg6.jpg) 100% 0 fixed no-repeat; }
 .jumbollax_crossover { background: url(/images/bg_crossover.jpg) 100% 0 fixed no-repeat; background-size: cover; }
 
 
